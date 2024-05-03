@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './../About_us/About_us.css';
+import Header from '../../layouts/Header/Header';
+import Footer from '../../layouts/Footer/Footer';
 
 const About_us = () => {
   return (
     <div>
-      <h3>About us page</h3>
+      <Header />
+      <h3>About Us</h3>
+      <Footer/>
     </div>
   )
 }
