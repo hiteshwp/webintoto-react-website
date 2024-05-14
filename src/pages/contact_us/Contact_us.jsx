@@ -1,5 +1,5 @@
 import React from 'react'
-import './../Contact_us/Contact_us.css';
+import './Contact_us.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 
