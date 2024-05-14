@@ -11,13 +11,12 @@ import "./Common.css"
 function App() {
   return (
     <>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path='/about-us' element={<About_us />}/>
-          <Route path='/services' element={<Services />}/>
-          <Route path='/blog' element={<Blog />}/>
-          <Route path='/contact-us' element={<Contact_us />}/>
-        </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/about-us' element={<About_us />}/>
+        <Route path='/services' element={<Services />}/>
+        <Route path='/contact-us' element={<Contact_us />}/>
+      </Routes>
     </>
   )
 }
