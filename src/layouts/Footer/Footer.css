@@ -1,0 +1,102 @@
+.footer-section {
+    background: #242124;
+    color: #fff;
+    padding-bottom: 20px !important;
+    overflow: hidden;
+}
+.footer-section::before{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    opacity: .05;
+    width: 300px;
+    height: 150px;
+    background: url("../../assets/images/symbol-grey.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.footer-cta-block {
+    text-align: center;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+.footer-cta-block h4 {
+    font-size: 3rem;
+    color: #fff;
+    max-width: 940px;
+    margin: 0 auto 40px;
+    font-weight: 800;
+}
+.footer-logo img {
+    max-width: 220px;
+}
+.footer-info p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #a3a3a3;
+    padding-right: 50px;
+}
+.footer-contact-info h5 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+}
+.contact-info-item a, .footer-link-list li a {
+    text-decoration: none;
+    margin: 15px 0;
+    display: flex;
+    position: relative;
+    color: #a3a3a3;
+    gap: 10px;
+    align-items: center;
+    transition: 0.2s ease-in-out all;
+}
+.contact-info-item a:hover, .footer-link-list li a:hover{
+    color: #745eff;
+}
+.contact-info-item a i {
+    color: #fff;
+}
+.contact-info-item a i {
+    font-size: 1.2rem;
+}
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+.footer-social a{
+    margin: 0;
+}
+.footer-social a {
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(163 163 163 / 30%);
+    border-radius: 100px;
+    transition: 0.2s ease-in-out all;
+}
+.footer-social a:hover, .footer-social a:hover i{
+    border-color: #745eff;
+    color: #745eff;
+}
+.footer-main-title {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+}
+.copyright-block {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(255 255 255 / 10%);
+    font-size: .8rem;
+    color: #a3a3a3;
+}
