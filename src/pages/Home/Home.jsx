@@ -2,6 +2,7 @@ import React from 'react'
 import "./../Home/Home.css";
 import Header from './../../layouts/Header/Header';
 import Footer from './../../layouts/Footer/Footer';
+import Carousel from 'react-bootstrap/Carousel';
 
 import heroBG1 from '../../assets/images/1-bg.png'
 import heroDownArrow from '../../assets/images/arrow-down-big.png'
@@ -13,7 +14,27 @@ import clientLogo5 from '../../assets/images/client-logo/c-logo5.png'
 import clientLogo6 from '../../assets/images/client-logo/c-logo6.png'
 import clientLogo7 from '../../assets/images/client-logo/c-logo7.png'
 import homeAbout from '../../assets/images/about-img1.jpg'
-import symbol1 from '../../assets/images/symbol-yellow.svg'
+import symbol1 from '../../assets/images/symbol-white.svg'
+import uiuxIcon from '../../assets/images/icons/ux-design.png'
+import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
+import mobileDevelopmentIcon from '../../assets/images/icons/mobile-development.png'
+import softwareDevelopmentIcon from '../../assets/images/icons/software-development.png'
+import blockChainIcon from '../../assets/images/icons/blockchain.png'
+import arVrIcon from '../../assets/images/icons/ar-vr.png'
+import iotIcon from '../../assets/images/icons/iot.png'
+import digitalMarketingIcon from '../../assets/images/icons/digital-marketing.png'
+import seoIcon from '../../assets/images/icons/seo.png'
+import html from '../../assets/images/tech-logo/html.png'
+import css from '../../assets/images/tech-logo/css.png'
+import wordpress from '../../assets/images/tech-logo/wordpress.png'
+import php from '../../assets/images/tech-logo/php.png'
+import laravel from '../../assets/images/tech-logo/laravel.png'
+import codeigniter from '../../assets/images/tech-logo/codeigniter.png'
+import angular from '../../assets/images/tech-logo/angular.png'
+import react from '../../assets/images/tech-logo/react-native.png'
+import flutter from '../../assets/images/tech-logo/flutter.png'
+import apple from '../../assets/images/tech-logo/apple.png'
+import android from '../../assets/images/tech-logo/android.png'
 
 const Home = () => {
   return (
@@ -44,7 +65,7 @@ const Home = () => {
         {/* Top banner section end */}
 
         {/* USP Counter and About section start */}
-        <section className="position-relative section-block">
+        <section className="position-relative section-block home-about-section">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
@@ -124,12 +145,293 @@ const Home = () => {
         {/* USP Counter and About section end */}
 
         {/* Service section start */}
-        {/* <section className="position-relative section-block service-section">
-           Service
-        </section> */}
+        <section className="position-relative section-block service-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="title-block">
+                  <h6 className="title-label">Our Expertise</h6>
+                  <h2 className="main-title">Technologies<br /> we are <span className="color-purple-lite">WEBINTOTO</span> with</h2>
+                  <p className="title-description">Best-in-class services behind better customer experiences</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-1">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={uiuxIcon} alt="UI/UX" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">UI/UX</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={uiuxIcon} alt="UI/UX" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-2">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={webProgrammingIcon} alt="Website Development" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">Website Development</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={webProgrammingIcon} alt="Website Development" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-3">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={mobileDevelopmentIcon} alt="Mobile Application" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">Mobile Application</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={mobileDevelopmentIcon} alt="Mobile Application" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-4">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={softwareDevelopmentIcon} alt="Software Development" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">Software Development</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={softwareDevelopmentIcon} alt="Software Development" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-5">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={blockChainIcon} alt="Blockchain" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">Blockchain</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={blockChainIcon} alt="Blockchain" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-6">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={arVrIcon} alt="AR/VR" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">AR/VR</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={arVrIcon} alt="AR/VR" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-7">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={iotIcon} alt="IOT" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">IOT</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={iotIcon} alt="IOT" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-8">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={digitalMarketingIcon} alt="Digital Marketing" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">Digital Marketing</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={digitalMarketingIcon} alt="Digital Marketing" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div className="service-card-block sc-bg-9">
+                  <div className="service-card-icon-wrapper">
+                    <span className="service-card-icon">
+                      <img src={seoIcon} alt="SEO" />
+                    </span>
+                  </div>
+                  <div className="service-card-content">
+                    <h4 className="service-card-title">SEO</h4>
+                    <p className="service-card-text">Lorem ipsum dolor sit amet, vet elit at consectetur adipiscing elit. liqua vel cur magna, Curabitur at enisus</p>
+                    <a href="#" className="btn btn-white">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
+                  </div>
+                  <div className="service-card-icon-bottom">
+                    <span className="service-card-icon">
+                      <img src={seoIcon} alt="SEO" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="technology-block">
+                  <ul className="technology-list-block">
+                    <li className="technology-item-block">
+                      <img src={html} alt="HTML" />
+                      <span class="techTitle">HTML</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={css} alt="CSS" />
+                      <span class="techTitle">CSS</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={wordpress} alt="Wordpress" />
+                      <span class="techTitle">Wordpress</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={php} alt="php" />
+                      <span class="techTitle">php</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={laravel} alt="Laravel" />
+                      <span class="techTitle">Laravel</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={codeigniter} alt="Codeigniter" />
+                      <span class="techTitle">Codeigniter</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={angular} alt="Angular" />
+                      <span class="techTitle">Angular</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={react} alt="React" />
+                      <span class="techTitle">React</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={flutter} alt="Flutter" />
+                      <span class="techTitle">Flutter</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={apple} alt="iOS" />
+                      <span class="techTitle">iOS</span>
+                    </li>
+                    <li className="technology-item-block">
+                      <img src={android} alt="Android" />
+                      <span class="techTitle">Android</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Service section end */}
+
+        {/* Testinomials section start */}
+        <section className="position-relative section-block testimonial-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="title-block">
+                  <h6 className="title-label">Client Testimonials</h6>
+                  <h2 className="main-title">Good things our clients<br /> saying about <span className="color-purple-lite">WEBINTOTO</span></h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="client-testimonials">
+                  <Carousel interval={7000}>
+                    <Carousel.Item>
+                      <div className="testimonial-content">
+                        <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
+                        <h4 className="review-heading">Michael Brian</h4>
+                        <h6 className="review-sub-heading">Vice President</h6>
+                      </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className="testimonial-content">
+                        <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
+                        <h4 className="review-heading">Michael Brian</h4>
+                        <h6 className="review-sub-heading">Vice President</h6>
+                      </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className="testimonial-content">
+                        <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
+                        <h4 className="review-heading">Michael Brian</h4>
+                        <h6 className="review-sub-heading">Vice President</h6>
+                      </div>
+                    </Carousel.Item>
+                  </Carousel> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Testinomials section end */}
+
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

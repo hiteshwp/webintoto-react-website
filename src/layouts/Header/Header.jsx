@@ -8,8 +8,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = () => {
 
   return (
-    <header className="headerSection">
-      <div className="headerContainer">
+    <header className="header-section">
+      <div className="header-container">
         <div className="brand">
           <a href="#"><img src={webintotoLogo} className="brandLogo" alt="Webintoto" /></a>
         </div>

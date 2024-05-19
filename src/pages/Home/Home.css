@@ -61,6 +61,12 @@
 .hero_down_arrow {
     width: auto;
 }
+.home-about-section, .testimonial-section{
+    background: url("../../assets/images/bg-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 .counter-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +75,7 @@
     box-shadow: 0 10px 50px rgba(0,0,0,0.05);
     border-radius: 25px;
     position: relative;
+    background: #fff;
 }
 .counter-item {
     width: calc(100% / 6);
@@ -116,7 +123,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background: #fff7ee;
+    background: #ffffff;
     padding: 100px 50px;
     border-radius: 30px 0 0 30px;
     margin-right: -25px;
@@ -145,4 +152,118 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.service-section{
+    background: url("../../assets/images/bg-3.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.technology-block {
+    margin-top: 50px;
+    background: #f7f8fa;
+    border-radius: 20px;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.technology-block::before{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    width: 300px;
+    height: 150px;
+    background: url("../../assets/images/symbol-white.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.technology-list-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.technology-item-block {
+    width: calc(90% / 7);
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.technology-item-block img {
+    max-width: 60px;
+}
+.techTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.testimonial-content {
+    padding: 50px;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+.testimonial-content::before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    width: 300px;
+    height: 150px;
+    background: url("../../assets/images/symbol-grey.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.review-paragraph {
+    padding: 70px;
+    line-height: 1.6;
+    position: relative;
+}
+.review-paragraph::before{
+    content: '\EC51';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "remixicon";
+    color: #745eff;
+    font-size: 4.2rem;
+}
+.review-paragraph::after{
+    content: '\EC52';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "remixicon";
+    color: #745eff;
+    font-size: 4.2rem;
+}
+.review-heading {
+    padding-left: 70px;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.review-sub-heading {
+    padding-left: 70px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.client-testimonials .carousel-control-prev, .client-testimonials .carousel-control-next{
+    display: none;
+}
+.client-testimonials .carousel-indicators{
+    bottom: -60px;   
+}
+.client-testimonials .carousel-indicators [data-bs-target]{
+    background-color: #141414;
+    opacity: 0.3;
+}
+.client-testimonials .carousel-indicators .active{
+    opacity: 1;
 }

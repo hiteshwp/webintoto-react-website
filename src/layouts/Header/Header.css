@@ -1,12 +1,12 @@
 /*Header css start*/
-.headerSection {
+.header-section {
     padding: 5px 15px;
     position: fixed;
     z-index: 9;
     width: 100%;
     top: 10px;
 }
-.headerContainer {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
