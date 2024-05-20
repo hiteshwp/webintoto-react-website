@@ -1,20 +1,60 @@
 import React from 'react'
 import './../Footer/Footer.css';
 import webintotoLogo from '../../assets/images/logo-white.png'
+import worldMap from '../../assets/images/world-map.svg'
 
 const Footer = () => {
   return (
     <>
-      <footer className="position-relative section-block footer-section">
-         <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="footer-cta-block">
-                  <h4>15 years of building digital products and we are just getting started!</h4>
-                  <a href="#" className="btn btn-primary">Start A Project <i className="ri-arrow-right-line ms-2"></i></a>
-                </div>
+      {/* Our global presence section start */}
+      <section className="position-relative section-block global-presence-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-12 col-lg-12">
+              <div className="title-block">
+                <h6 className="title-label">Locations</h6>
+                <h2 className="main-title">Our Global <span className="color-purple-lite">presence</span></h2>
               </div>
             </div>
+          </div>
+          <div className="row">
+            <div className="col-12 col-md-12 col-lg-12">
+              <div className="world-map-block">
+                <div className="world-map-list">
+                  <ul>
+                    <li>
+                      <span>Germany</span>
+                    </li>
+                    <li>
+                      <span>Canada</span>
+                    </li>
+                    <li>
+                      <span>United Kingdom</span>
+                    </li>
+                    <li>
+                      <span>USA</span>
+                    </li>
+                  </ul>
+                </div>
+                <img src={worldMap} alt="World Map" />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 col-md-12 col-lg-12">
+              <div className="footer-cta-block">
+                <h4>15 years of building digital products and we are just getting started!</h4>
+                <a href="#" className="btn btn-primary">Start A Project <i className="ri-arrow-right-line ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Our global presence section end */}
+
+      {/* Footer section start */}
+      <footer className="position-relative section-block footer-section">
+         <div className="container">
             <div className="row">
               <div className="col-12 col-md-3 col-lg-3">
                 <div className="footer-info">
@@ -48,22 +88,22 @@ const Footer = () => {
                   <h5 className="footer-main-title">Webintoto</h5>
                   <ul className="footer-link-list">
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Our Story</a>
+                      <a href="#"><i className="ri-separator"></i> Our Story</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Our Work</a>
+                      <a href="#"><i className="ri-separator"></i> Our Work</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Our Story</a>
+                      <a href="#"><i className="ri-separator"></i> Our Story</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Technology</a>
+                      <a href="#"><i className="ri-separator"></i> Technology</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Career</a>
+                      <a href="#"><i className="ri-separator"></i> Career</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Contact Us</a>
+                      <a href="#"><i className="ri-separator"></i> Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -73,31 +113,31 @@ const Footer = () => {
                   <h5 className="footer-main-title">Our Services</h5>
                   <ul className="footer-link-list">
                     <li>
-                      <a href="#"><i class="ri-separator"></i> UI/UX</a>
+                      <a href="#"><i className="ri-separator"></i> UI/UX</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Website Development</a>
+                      <a href="#"><i className="ri-separator"></i> Website Development</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Mobile Application</a>
+                      <a href="#"><i className="ri-separator"></i> Mobile Application</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Software Development</a>
+                      <a href="#"><i className="ri-separator"></i> Software Development</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Blockchain</a>
+                      <a href="#"><i className="ri-separator"></i> Blockchain</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> AR/VR</a>
+                      <a href="#"><i className="ri-separator"></i> AR/VR</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> IOT</a>
+                      <a href="#"><i className="ri-separator"></i> IOT</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Digital Marketing</a>
+                      <a href="#"><i className="ri-separator"></i> Digital Marketing</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> SEO</a>
+                      <a href="#"><i className="ri-separator"></i> SEO</a>
                     </li>
                   </ul>
                 </div>
@@ -107,19 +147,19 @@ const Footer = () => {
                   <h5 className="footer-main-title">Industries</h5>
                   <ul className="footer-link-list">
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Ecommerce</a>
+                      <a href="#"><i className="ri-separator"></i> Ecommerce</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> NGO</a>
+                      <a href="#"><i className="ri-separator"></i> NGO</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> User Management</a>
+                      <a href="#"><i className="ri-separator"></i> User Management</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Entertainment Industries</a>
+                      <a href="#"><i className="ri-separator"></i> Entertainment Industries</a>
                     </li>
                     <li>
-                      <a href="#"><i class="ri-separator"></i> Medical Industries</a>
+                      <a href="#"><i className="ri-separator"></i> Medical Industries</a>
                     </li>
                   </ul>
                 </div>
@@ -134,6 +174,7 @@ const Footer = () => {
             </div>
          </div>
       </footer>
+      {/* Footer section end */}
     </>
   )
 }

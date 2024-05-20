@@ -46,17 +46,29 @@ const Home = () => {
           <div className="heroHome-slider swiper-container">
             <div className="align-items-center">
               <div className="container">
-                <div className="row">
-                  <div className="hero__title-wrapper col-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-column justify-content-center text-left text-white">
-                    <small className="mb-3">We Deliver</small>
-                    <h1 className="mb-3">World-class Digital Solutions</h1>
-                    <p className="hero__sub-title">With every single one of our clients, we bring forth deep passion for <span className="text-white">creative problem solving</span> which is what we deliver.</p>
-                    <div className="text-left">
-                      <a href="#" className="btn btn-primary">Get a Quote in 24 Hours <i className="ri-arrow-right-line ms-2"></i></a>
+                <Carousel interval={5000}>
+                  <Carousel.Item>
+                    <div className="hero__title-wrapper d-flex flex-column justify-content-center text-left text-white">
+                      <small className="mb-3">We Deliver</small>
+                      <h1 className="mb-3">World-class Digital Solutions</h1>
+                      <p className="hero__sub-title">With every single one of our clients, we bring forth deep passion for <span className="text-white">creative problem solving</span> which is what we deliver.</p>
+                      <div className="text-left">
+                        <a href="#" className="btn btn-primary">Get a Quote in 24 Hours <i className="ri-arrow-right-line ms-2"></i></a>
+                      </div>
                     </div>
-                  </div>
-                  <img src={heroDownArrow} alt="Down Arrow" className="hero_down_arrow" />
-                </div>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <div className="hero__title-wrapper d-flex flex-column justify-content-center text-left text-white">
+                      <small className="mb-3">We Deliver</small>
+                      <h1 className="mb-3">World-class Digital Solutions</h1>
+                      <p className="hero__sub-title">With every single one of our clients, we bring forth deep passion for <span className="text-white">creative problem solving</span> which is what we deliver.</p>
+                      <div className="text-left">
+                        <a href="#" className="btn btn-primary">Get a Quote in 24 Hours <i className="ri-arrow-right-line ms-2"></i></a>
+                      </div>
+                    </div>
+                  </Carousel.Item>
+                </Carousel> 
+                <img src={heroDownArrow} alt="Down Arrow" className="hero_down_arrow" />
               </div>
             </div>
           </div>
@@ -78,21 +90,21 @@ const Home = () => {
             </div>
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
-                <div class="counter-wrapper mt-3">
-                  <div class="counter-item">
-                    <h2 class="counter-number">15</h2>
+                <div className="counter-wrapper mt-3">
+                  <div className="counter-item">
+                    <h2 className="counter-number">15</h2>
                     <p>Years experiences</p>
                   </div>
-                  <div class="counter-item">
-                    <h2 class="counter-number">189+</h2>
+                  <div className="counter-item">
+                    <h2 className="counter-number">189+</h2>
                     <p>Project Completed</p>
                   </div>
-                  <div class="counter-item">
-                    <h2 class="counter-number">99%</h2>
+                  <div className="counter-item">
+                    <h2 className="counter-number">99%</h2>
                     <p>Successful projects</p>
                   </div>
-                  <div class="counter-item">
-                    <h2 class="counter-number">150+</h2>
+                  <div className="counter-item">
+                    <h2 className="counter-number">150+</h2>
                     <p>Happy Clients</p>
                   </div>
                 </div>
@@ -128,8 +140,26 @@ const Home = () => {
             <div className="row home-about-wrap">
               <div className="col-12 col-md-6 col-lg-6">
                 <div className="home-about-content-block">
-                  <h3>One-stop solution for the online presence of your brand.</h3>
-                  <p>Welcome to WebInToTo! As the name suggests we provide all services that help to enhance the performance of your brand online. With zero hassles, you will get the all the solutions at fair prices. Your search ends here for the services like Web Designing, Software Development, Mobile App Development, Digital Marketing, Search Engine Optimization (SEO), Social Media Marketing, Ecommerce Solutions, etc.</p>
+                  <h6>What We Do, What You Get</h6>
+                  <h3>Fresh Ideas. <br/> Thoughtful Design.</h3>
+                  <p>Welcome to WebInToTo! As the name suggests we provide all services that help to enhance the performance of your brand online.</p>
+                  <div className="list-icons">
+                    <div className="item-icon">
+                      <span className="icon-left"><i className="ri-tent-line"></i></span>
+                      <h4 className="text-heading-4">Work smarter with powerful features</h4>
+                      <p className="text-body-excerpt color-gray-600 mt-15">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                    </div>
+                    <div className="item-icon">
+                      <span className="icon-left"><i className="ri-tent-line"></i></span>
+                      <h4 className="text-heading-4">Designed for teams of all sorts and sizes</h4>
+                      <p className="text-body-excerpt color-gray-600 mt-15">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                    </div>
+                    <div className="item-icon">
+                      <span className="icon-left"><i className="ri-tent-line"></i></span>
+                      <h4 className="text-heading-4">Advanced analytics to grow your business</h4>
+                      <p className="text-body-excerpt color-gray-600 mt-15">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                    </div>
+                  </div>
                   <a href="#" className="btn btn-secondary">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
@@ -331,51 +361,62 @@ const Home = () => {
             </div>
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
+                <div className="cta-block">
+                  <div className="cta-content">
+                    <h3 className="cta-title">Lat’s make someting great together</h3>
+                    <p className="cta-text">Using year-over-year most design approaches and latest techs website will be lightly.</p>
+                    <a href="#" className="btn btn-primary">Get A Quote?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
                 <div className="technology-block">
                   <ul className="technology-list-block">
                     <li className="technology-item-block">
                       <img src={html} alt="HTML" />
-                      <span class="techTitle">HTML</span>
+                      <span className="techTitle">HTML</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={css} alt="CSS" />
-                      <span class="techTitle">CSS</span>
+                      <span className="techTitle">CSS</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={wordpress} alt="Wordpress" />
-                      <span class="techTitle">Wordpress</span>
+                      <span className="techTitle">Wordpress</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={php} alt="php" />
-                      <span class="techTitle">php</span>
+                      <span className="techTitle">php</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={laravel} alt="Laravel" />
-                      <span class="techTitle">Laravel</span>
+                      <span className="techTitle">Laravel</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={codeigniter} alt="Codeigniter" />
-                      <span class="techTitle">Codeigniter</span>
+                      <span className="techTitle">Codeigniter</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={angular} alt="Angular" />
-                      <span class="techTitle">Angular</span>
+                      <span className="techTitle">Angular</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={react} alt="React" />
-                      <span class="techTitle">React</span>
+                      <span className="techTitle">React</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={flutter} alt="Flutter" />
-                      <span class="techTitle">Flutter</span>
+                      <span className="techTitle">Flutter</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={apple} alt="iOS" />
-                      <span class="techTitle">iOS</span>
+                      <span className="techTitle">iOS</span>
                     </li>
                     <li className="technology-item-block">
                       <img src={android} alt="Android" />
-                      <span class="techTitle">Android</span>
+                      <span className="techTitle">Android</span>
                     </li>
                   </ul>
                 </div>
@@ -429,7 +470,6 @@ const Home = () => {
           </div>
         </section>
         {/* Testinomials section end */}
-
       </div>
       <Footer />
     </>
