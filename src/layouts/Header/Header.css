@@ -38,11 +38,10 @@
     padding: 0 15px !important;
 }
 .mainMenuBlock .nav-link:hover {
-    text-decoration: underline;
+    color: #745eff;
 }
 .mainMenuBlock .navbar-nav .nav-link.active,.mainMenuBlock .navbar-nav .nav-link.show {
-    color: #fff;
-    text-decoration: underline;
+    color: #745eff;
 }
 .mainMenuBlock .dropdown-item {
     padding: 10px 15px;
