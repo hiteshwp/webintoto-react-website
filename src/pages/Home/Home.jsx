@@ -39,7 +39,10 @@ import android from '../../assets/images/tech-logo/android.png'
 const Home = () => {
   return (
     <>
+      {/* Header section start */}
       <Header />
+      {/* Header section end */}
+
       <div className="mainSection">
         {/* Top banner section start */}
         <section className="position-relative section-block hero__area d-flex align-items-center p-0 bg-dark">
@@ -139,25 +142,25 @@ const Home = () => {
             </div>
             <div className="row home-about-wrap">
               <div className="col-12 col-md-6 col-lg-6">
-                <div className="home-about-content-block">
+                <div className="home-about-content-block ps-0">
                   <h6>What We Do, What You Get</h6>
                   <h3>Fresh Ideas. <br/> Thoughtful Design.</h3>
                   <p>Welcome to WebInToTo! As the name suggests we provide all services that help to enhance the performance of your brand online.</p>
                   <div className="list-icons">
                     <div className="item-icon">
                       <span className="icon-left"><i className="ri-tent-line"></i></span>
-                      <h4 className="text-heading-4">Work smarter with powerful features</h4>
-                      <p className="text-body-excerpt color-gray-600 mt-15">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                      <h4 className="text-heading-4">Our Experience</h4>
+                      <p className="text-body-excerpt color-gray-600 mt-15">We are catering to this industry for more than 7 years successfully. We enlarged our services to many companies with IT-related requirements.</p>
                     </div>
                     <div className="item-icon">
                       <span className="icon-left"><i className="ri-tent-line"></i></span>
-                      <h4 className="text-heading-4">Designed for teams of all sorts and sizes</h4>
-                      <p className="text-body-excerpt color-gray-600 mt-15">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                      <h4 className="text-heading-4">Dedicated and Proficient Team</h4>
+                      <p className="text-body-excerpt color-gray-600 mt-15">Our experienced and passionate team members are having years of experience in the respective industry. Their expertise and knowledge increase our strength to serve our clients.</p>
                     </div>
                     <div className="item-icon">
                       <span className="icon-left"><i className="ri-tent-line"></i></span>
-                      <h4 className="text-heading-4">Advanced analytics to grow your business</h4>
-                      <p className="text-body-excerpt color-gray-600 mt-15">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+                      <h4 className="text-heading-4">Versatility to serve you better</h4>
+                      <p className="text-body-excerpt color-gray-600 mt-15">We have the expertise and experience that help brands to uplift the graph of success upwards and take their business to an elevated level in the competitive market.</p>
                     </div>
                   </div>
                   <a href="#" className="btn btn-secondary">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
@@ -471,7 +474,10 @@ const Home = () => {
         </section>
         {/* Testinomials section end */}
       </div>
+
+      {/* Footer section start */}
       <Footer />
+      {/* Footer section end */}
     </>
   )
 }

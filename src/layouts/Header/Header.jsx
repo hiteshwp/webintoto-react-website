@@ -11,7 +11,7 @@ const Header = () => {
     <header className="header-section">
       <div className="header-container">
         <div className="brand">
-          <a href="#"><img src={webintotoLogo} className="brandLogo" alt="Webintoto" /></a>
+          <a href="/"><img src={webintotoLogo} className="brandLogo" alt="Webintoto" /></a>
         </div>
         <div className="headerNavBlock">
           <div className="mainMenuBlock">
@@ -21,7 +21,7 @@ const Header = () => {
                     <Nav className="me-auto">
                       <Nav.Link href="#">Our Work</Nav.Link>
                       <NavDropdown title="Services" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">UI/UX</NavDropdown.Item>
+                        <NavDropdown.Item href="/ui-ux-design">UI/UX</NavDropdown.Item>
                         <NavDropdown.Item href="#">Website Development</NavDropdown.Item>
                         <NavDropdown.Item href="#">Mobile Application</NavDropdown.Item>
                         <NavDropdown.Item href="#">Software Development</NavDropdown.Item>
@@ -32,7 +32,7 @@ const Header = () => {
                         <NavDropdown.Item href="#">SEO</NavDropdown.Item>
                       </NavDropdown>
                       <NavDropdown title="Company" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">Our Story</NavDropdown.Item>
+                        <NavDropdown.Item href="/our-story">Our Story</NavDropdown.Item>
                         <NavDropdown.Item href="#">Case study</NavDropdown.Item>
                         <NavDropdown.Item href="#">Contact us</NavDropdown.Item>
                       </NavDropdown>
