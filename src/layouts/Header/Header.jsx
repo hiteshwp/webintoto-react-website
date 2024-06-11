@@ -4,6 +4,7 @@ import webintotoLogo from '../../assets/images/logo-white.png'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -11,7 +12,7 @@ const Header = () => {
     <header className="header-section">
       <div className="header-container">
         <div className="brand">
-          <a href="/"><img src={webintotoLogo} className="brandLogo" alt="Webintoto" /></a>
+          <Link to="/"><img src={webintotoLogo} className="brandLogo" alt="Webintoto" /></Link>
         </div>
         <div className="headerNavBlock">
           <div className="mainMenuBlock">
@@ -21,7 +22,7 @@ const Header = () => {
                     <Nav className="me-auto">
                       <Nav.Link href="#">Our Work</Nav.Link>
                       <NavDropdown title="Services" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/ui-ux-design">UI/UX</NavDropdown.Item>
+                        <Link to="/ui-ux-design">UI/UX</Link>
                         <NavDropdown.Item href="#">Website Development</NavDropdown.Item>
                         <NavDropdown.Item href="#">Mobile Application</NavDropdown.Item>
                         <NavDropdown.Item href="#">Software Development</NavDropdown.Item>
@@ -32,7 +33,7 @@ const Header = () => {
                         <NavDropdown.Item href="#">SEO</NavDropdown.Item>
                       </NavDropdown>
                       <NavDropdown title="Company" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/our-story">Our Story</NavDropdown.Item>
+                        <Link to="/our-story">Our Story</Link>
                         <NavDropdown.Item href="#">Case study</NavDropdown.Item>
                         <NavDropdown.Item href="#">Contact us</NavDropdown.Item>
                       </NavDropdown>
