@@ -4,10 +4,9 @@ import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
 
-import uiuxTitleImg from '../../assets/images/icons/ui-ux-service.svg';
-import serviceImg1 from '../../assets/images/uiux-service-img1.jpg';
-import serviceImg2 from '../../assets/images/icons/ui-ux-service2.svg';
-import ourProcess from '../../assets/images/process-steps-img.svg';
+import mobileApplicatoinTitleImg from '../../assets/images/icons/mobile-application-service.svg';
+import serviceImg1 from '../../assets/images/dev-1.jpg';
+import serviceImg2 from '../../assets/images/dev-2.jpg';
 
 import uiuxIcon from '../../assets/images/icons/ux-design.png'
 import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
@@ -30,11 +29,11 @@ const Services = () => {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block1 position-relative uiux-service-title">
-                  <h6 className="title-label text-white">Design Service</h6>
-                  <h2 className="main-title text-white text-capitalize">UI/UX Design <span className="color-purple-lite">Services</span></h2>
-                  <p className="title-description text-white ms-0 mb-4">Our in-house design studio targets delivering value-driven UI/UX designs that create engaging mobile and web apps. An innovative process, timely completion and superior user experience are our forte.</p>
+                  <h6 className="title-label text-white">Mobile Service</h6>
+                  <h2 className="main-title text-white text-capitalize">Mobile Application <span className="color-purple-lite">Services</span></h2>
+                  <p className="title-description text-white ms-0 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis necessitatibus cupiditate totam reiciendis, dicta esse voluptatibus quam expedita iste facilis aut quisquam blanditiis explicabo possimus natus dolorum nemo repellat?</p>
                   <a href="#" className="btn btn-yellow">Schedule a Free Consultation!</a>
-                  <img src={uiuxTitleImg} alt="UI/UX Design" className="title-icon uiux-title-icon" />
+                  <img src={mobileApplicatoinTitleImg} alt="Mobile Application" className="title-icon mobile-application-title-icon" />
                 </div>
               </div>
             </div>
@@ -43,48 +42,46 @@ const Services = () => {
         {/* Top title section end */}
 
         {/* Service section1 start */}
-        <section className="position-relative section-block service-section1 bg-yellow symbol-white1">
+        <section className="position-relative section-block service-section1 bg-white symbol-white1">
           <div className="container position-relative z-1">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="service-title-block1">
-                  <h6 className="title-label">UI/UX Design Services</h6>
-                  <h2 className="main-title text-capitalize">We are a leading UI/UX design company with solid design and development expertise.</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto minus quo quae eaque. Aperiam corporis, eveniet libero ab suscipit consectetur ipsum. Aspernatur ab deserunt doloribus, amet laudantium quisquam expedita sit eum quibusdam debitis, laborum error accusantium itaque. Explicabo neque optio consequuntur dignissimos excepturi ea error exercitationem similique eos pariatur!</p>
+            <div class="row">
+              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-title animation__char_come">Top Quality Mobile App Development Services</h2>
+                </div>
+              </div>
+              <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                <div class="development__wrapper">
+                  <div class="development__content border-0 pb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam, aliquid nostrum vel consequuntur vero voluptate fuga animi, at doloremque aliquam quisquam. Debitis ipsum rerum doloribus obcaecati molestiae cum quisquam!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos soluta minus eius nemo doloribus, mollitia necessitatibus eveniet cum reiciendis.</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-6 col-lg-6">
-                <div className="service-list-block1">
-                  <ul className="service-list">
-                    <li>
-                      <i className="ri-corner-down-right-fill"></i>
-                      <h6>Custom Tailored Design</h6>
-                    </li>
-                    <li>
-                      <i className="ri-corner-down-right-fill"></i>
-                      <h6>User-Friendly Experiences</h6>
-                    </li>
-                    <li>
-                      <i className="ri-corner-down-right-fill"></i>
-                      <h6>Smoother Navigations</h6>
-                    </li>
-                    <li>
-                      <i className="ri-corner-down-right-fill"></i>
-                      <h6>Modern UX Tech Stack</h6>
-                    </li>
-                    <li>
-                      <i className="ri-corner-down-right-fill"></i>
-                      <h6>Expert UI UX Consulting Services</h6>
-                    </li>
-                  </ul>
-                  <a className="btn btn-primary">Get In Touch <i class="ri-arrow-right-line ms-2"></i></a>
+              <div className="col-12 col-md-3 col-lg-3">
+                <div className="serviceCardBlock">
+                  <h3>App <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-6">
-                <div className="service-img-block1">
-                  <img src={serviceImg1} alt="UI/UX Services" />
+              <div className="col-12 col-md-3 col-lg-3">
+                <div className="serviceCardBlock">
+                  <h3>Blockchain <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
+                </div>
+              </div>
+              <div className="col-12 col-md-3 col-lg-3">
+                <div className="serviceCardBlock">
+                  <h3>Augmented <br /> Reality</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
+                </div>
+              </div>
+              <div className="col-12 col-md-3 col-lg-3">
+                <div className="serviceCardBlock">
+                  <h3>Game <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
             </div>
@@ -93,69 +90,30 @@ const Services = () => {
         {/* Service section1 end */}
 
         {/* Service section2 start */}
-        <section className="position-relative section-block service-section2 bg-ghost-white">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="title-block">
-                  <h6 className="title-label">Design Services</h6>
-                  <h2 className="main-title">Our UI UX <span className="color-purple-lite">Design</span> Services</h2>
+        <section className="position-relative section-block bg-electric-violet">
+          <div className="container position-relative">
+            <div className="row justify-content-center d-flex">
+              <div className="col-12 col-md-8 col-lg-8">
+                <div className="serviceCenterBlock">
+                  <h4 className="text-white">Work with a Globally-Recognized Mobile Application Development Company</h4>
+                  <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum cum fugiat eligendi assumenda? Quam assumenda, repudiandae error aperiam architecto ipsam, explicabo qui ipsa nihil hic voluptatem suscipit accusantium quidem nam iure recusandae maiores? Labore voluptate, esse, nobis veniam ipsum, quae ullam corrupti cum iure sed vel ad incidunt totam autem officia. Magnam perferendis, hic labore, maiores, omnis maxime sed ad repellendus reprehenderit minus reiciendis consectetur quasi dolor. Adipisci aut nobis laborum. Exercitationem laudantium magnam commodi sit rem nam deserunt. Tenetur pariatur corrupti sint. Totam illo est impedit suscipit explicabo reprehenderit vitae laboriosam! Earum voluptas necessitatibus, laudantium nostrum commodi maxime quisquam.</p>
+                  <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quis nobis sit eveniet dolore, maiores sed quisquam omnis earum iste unde dolorum deserunt sint maxime ullam hic a quibusdam expedita velit assumenda qui? Nihil vel, hic incidunt rerum, tempora reprehenderit perspiciatis magni odio corrupti voluptatum quibusdam voluptas! Dicta, delectus quaerat.</p>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        {/* Service section2 end */}
 
-            <div className="row justify-content-center">
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-mac-line"></i>
-                  </span>
-                  <h5>Web <br /> Design</h5>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-smartphone-line"></i>
-                  </span>
-                  <h5>Mobile <br /> App Design</h5>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-shape-line"></i>
-                  </span>
-                  <h5>Wirerames & <br /> Prototyping</h5>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-compasses-2-line"></i>
-                  </span>
-                  <h5>Logo <br /> Design</h5>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-pen-nib-line"></i>
-                  </span>
-                  <h5>Graphic <br /> Design</h5>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-12 col-md-6 col-lg-6">
-                <div className="service-img-block2">
-                  <img src={serviceImg2} alt="Service Img" />
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-6 align-items-center d-flex">
-                <div className="service-card-info">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusantium velit nulla perspiciatis. Fugiat voluptatum debitis esse, veritatis aliquam molestias harum cupiditate consectetur nulla blanditiis et sit? Nemo, alias eius.</p>
+        {/* Service section2 start */}
+        <section className="position-relative section-block bg-seasalt symbol-white2">
+          <div className="container position-relative">
+            <div className="row justify-content-center d-flex">
+              <div className="col-12 col-md-8 col-lg-8">
+                <div className="serviceCenterBlock">
+                  <h4>Work with a Globally-Recognized Mobile Application Development Company</h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum cum fugiat eligendi assumenda? Quam assumenda, repudiandae error aperiam architecto ipsam, explicabo qui ipsa nihil hic voluptatem suscipit accusantium quidem nam iure recusandae maiores? Labore voluptate, esse, nobis veniam ipsum, quae ullam corrupti cum iure sed vel ad incidunt totam autem officia. Magnam perferendis, hic labore, maiores, omnis maxime sed ad repellendus reprehenderit minus reiciendis consectetur quasi dolor. Adipisci aut nobis laborum. Exercitationem laudantium magnam commodi sit rem nam deserunt. Tenetur pariatur corrupti sint. Totam illo est impedit suscipit explicabo reprehenderit vitae laboriosam! Earum voluptas necessitatibus, laudantium nostrum commodi maxime quisquam.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quis nobis sit eveniet dolore, maiores sed quisquam omnis earum iste unde dolorum deserunt sint maxime ullam hic a quibusdam expedita velit assumenda qui? Nihil vel, hic incidunt rerum, tempora reprehenderit perspiciatis magni odio corrupti voluptatum quibusdam voluptas! Dicta, delectus quaerat.</p>
                 </div>
               </div>
             </div>
@@ -164,23 +122,66 @@ const Services = () => {
         {/* Service section2 end */}
 
         {/* Service section3 start */}
-        <section className="position-relative section-block service-section3 bg-pink symbol-white2">
+        <section className="position-relative section-block service-section3 bg-papaya-whip">
           <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="title-block">
-                  <h6 className="title-label">Our Process</h6>
-                  <h2 className="main-title">See what our projects have <br /> to go <span className="color-purple-lite">through..!</span></h2>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum molestias voluptatum ipsum sapiente sequi aliquam quas dolores quia ab, non impedit reiciendis vitae voluptatem quae quos debitis aut! Maiores neque voluptas, quod possimus, asperiores voluptatum, laboriosam fuga nemo vitae quos atque adipisci minus tenetur aspernatur harum doloribus officiis et.</p>
+            <div class="row">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-title title-anim">App Development Process</h2>
+                </div>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div class="feature__text text-anim">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cupiditate optio adipisci aspernatur autem aliquid repellendus impedit expedita, nulla numquam! Necessitatibus, distinctio molestias natus explicabo, perspiciatis dolore recusandae cum harum reiciendis placeat iste magni odit eos commodi. Praesentium ipsam vero totam iusto optio facere! Nemo, eos? Sed dolorem ea aperiam?</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 pt-5">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="box-bullits">
+                  <h2>01</h2>
+                  <h3>Plan</h3>
+                  <hr className="serviceCardLine" />
+                  <ul>
+                    <li>Business analysis</li>
+                    <li>Documenting specifications</li>
+                    <li>Preparing wireframes</li>
+                    <li>Getting client approval</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="box-bullits">
+                  <h2>02</h2>
+                  <h3>Design</h3>
+                  <hr className="serviceCardLine" />
+                  <ul>
+                    <li>Crafting app prototype</li>
+                    <li>Making changes</li>
+                    <li>Getting client approval</li>
+                    <li>Implementing feedback</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="box-bullits bg-nonesdq">
+                  <h2>03</h2>
+                  <h3>Development</h3>
+                  <hr className="serviceCardLine" />
+                  <ul>
+                    <li>Development strategy</li>
+                    <li>Testing strategy</li>
+                    <li>Product development</li>
+                    <li>Product release</li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
-                <div className="our-process-block">
-                  <img src={ourProcess} alt="Our Process" />
-                </div>
-                <div className="cta-card-block">
+                <div className="cta-card-block max-width-none">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
                   <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
