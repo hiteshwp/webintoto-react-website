@@ -5,6 +5,9 @@ p,ul,li,a,ol,div,section,strong,span,label,input,select,textarea,h1,h2,h3,h4,h5,
 ul,li{margin:0;padding:0;list-style:none;}
 a{transition:0.2s ease-in-out all;}
 img{max-width: 100%;}
+.max-width-none{
+    max-width: initial !important;
+}
 .bg-dark {
     background: #000;
 }
@@ -52,6 +55,12 @@ img{max-width: 100%;}
     background-position: center center;
     background-attachment: fixed;
 }
+.bg-white-pattern1{
+    background: url("assets/images/bg-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 .bg-gray-pattern{
     background: url("assets/images/bg-1.jpg") no-repeat;
     background-size: cover;
@@ -66,6 +75,27 @@ img{max-width: 100%;}
 }
 .bg-pink{
     background: #FFF0F5;
+}
+.bg-seasalt{
+    background: #F7F7F7;
+}
+.bg-electric-violet{
+    background: #8F00FF;
+}
+.bg-papaya-whip{
+    background: #FFEFD5;
+}
+.symbol-grey1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    opacity: 0.6;
+    width: 500px;
+    height: 220px;
+    background: url("assets/images/symbol-grey.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .symbol-white1::before {
     content: '';
@@ -120,13 +150,17 @@ img{max-width: 100%;}
     bottom: -105px;
     width: 100%;
     max-width: 550px;
+    filter: drop-shadow(-2px -2px 0px #ffffff1a);
+}
+.mobile-application-title-icon{
+    max-width: 450px;
 }
 .inner-title-section {
     padding-top: 200px;
     padding-bottom: 200px;
     background: #242124;
 }
-.section-shape1, .section-shape2{
+.section-shape1, .section-shape2, .section-shape3{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -135,7 +169,7 @@ img{max-width: 100%;}
     right: 0;
     bottom: 0;
 }
-.section-shape1::before, .section-shape1::after, .section-shape2::before{
+.section-shape1::before, .section-shape1::after, .section-shape2::before, .section-shape3::after{
     content: '';
     background-position: center center;
     background-size: contain;
@@ -159,6 +193,11 @@ img{max-width: 100%;}
     background: rgb(179 94 255 / 40%);
     right: 10%;
     bottom: -50px;
+}
+.section-shape3::after{
+    background: rgb(255 184 94 / 40%);
+    right: 5%;
+    bottom: 0;
 }
 .inner-title-section1{
     padding-top: 200px;
@@ -284,8 +323,196 @@ img{max-width: 100%;}
     border-radius: 100px;
     margin-top: -50px;
 }
-
+.sec-title {
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+.development__wrapper {
+    padding-bottom: 55px;
+}
+.development__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 80px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #141414;
+    position: relative;
+    z-index: 1;
+}
+.development__content p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.development__wrapper ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 240px auto;
+    grid-template-columns: 240px auto;
+    -ms-grid-columns: 310px auto;
+    grid-template-columns: 310px auto;
+}
+.development__wrapper ul li {
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.development__img img {
+    width: 100%;
+}
+.radius-left-30{
+    overflow: hidden;
+    border-radius: 30px 0 0 30px;
+}
+.radius-right-30{
+    overflow: hidden;
+    border-radius: 0 30px 30px 0;
+}
+.feature__top {
+    padding-bottom: 65px;
+    border-bottom: 1px solid #141414;
+    position: relative;
+    z-index: 1;
+}
+.feature__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.feature__item {
+    border-right: 1px solid #141414;
+    padding: 145px 30px;
+}
+.feature__item:first-child {
+    padding-left: 0;
+}
+.feature__title {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-bottom: 12px;
+}
+.feature__item p {
+    font-size: 1rem;
+}
+.feature__item img {
+    max-width: 80px;
+    margin-bottom: 35px;
+}
+.workflow__wrapper-6 {
+    border-top: 2px solid #ffffff;
+    padding-top: 50px;
+}
+.workflow__slide-6 {
+    max-width: 270px;
+    position: relative;
+}
+.workflow__slide-6::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: -56px;
+    background-color: #414141;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    -webkit-animation: wcBubble 1.5s 1s infinite;
+    animation: wcBubble 1.5s 1s infinite;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.workflow__title-6 {
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+.serviceCardBlock {
+    background: #FEFEFA;
+    border: 1px solid #EEDC82;
+    box-shadow: 5px 5px 0 #EEDC82;
+    padding: 60px 40px;
+    border-radius: 30px;
+}
+.serviceCardBlock h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.serviceCardBlock p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.serviceCenterBlock h4 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.serviceCenterBlock p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.box-bullits h2 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+.box-bullits h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.serviceCardLine {
+    max-width: 200px;
+    border-color: #000;
+    opacity: 1;
+}
+.box-bullits {
+    position: relative;
+}
+.box-bullits:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: url('assets/images/symbol-verticle1.svg') center/100% 100% no-repeat;
+    height: 160px;
+    width: 75px;
+    top: 15%;
+    right: 50px;
+}
+.bg-nonesdq:last-child::after{
+    display: none;
+}
+.box-bullits ul {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 32px;
+}
+.box-bullits ul li {
+    list-style: square;
+}
 /*Animation css start*/
+@keyframes wcBubble {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.8;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
 @keyframes wcRotate {
     0% {
         -webkit-transform: rotate(0deg) scale(1.1);

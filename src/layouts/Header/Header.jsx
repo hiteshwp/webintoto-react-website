@@ -20,27 +20,27 @@ const Header = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                      <Nav.Link href="#">Our Work</Nav.Link>
+                      <Link>Our Work</Link>
                       <NavDropdown title="Services" id="basic-nav-dropdown">
                         <Link to="/ui-ux-design">UI/UX</Link>
-                        <NavDropdown.Item href="#">Website Development</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Mobile Application</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Software Development</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Blockchain</NavDropdown.Item>
-                        <NavDropdown.Item href="#">AR/VR</NavDropdown.Item>
-                        <NavDropdown.Item href="#">IOT</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Digital marketing</NavDropdown.Item>
-                        <NavDropdown.Item href="#">SEO</NavDropdown.Item>
+                        <Link to="/website-development">Website Development</Link>
+                        <Link to="/mobile-application">Mobile Application</Link>
+                        <Link>Software Development</Link>
+                        <Link>Blockchain</Link>
+                        <Link>AR/VR</Link>
+                        <Link>IOT</Link>
+                        <Link>Digital marketing</Link>
+                        <Link>SEO</Link>
                       </NavDropdown>
                       <NavDropdown title="Company" id="basic-nav-dropdown">
                         <Link to="/our-story">Our Story</Link>
-                        <NavDropdown.Item href="#">Case study</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Contact us</NavDropdown.Item>
+                        <Link>Case study</Link>
+                        <Link>Contact Us</Link>
                       </NavDropdown>
-                      <Nav.Link href="#">Industries</Nav.Link>
-                      <Nav.Link href="#">Technologies</Nav.Link>
-                      <Nav.Link href="#">Career</Nav.Link>
-                      <Nav.Link href="#">Blog</Nav.Link>
+                      <Link>Industries</Link>
+                      <Link>Technologies</Link>
+                      <Link>Career</Link>
+                      <Link>Blog</Link>
                     </Nav>
               </Navbar.Collapse>
             </Navbar>
