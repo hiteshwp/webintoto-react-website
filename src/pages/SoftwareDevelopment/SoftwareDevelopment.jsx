@@ -4,9 +4,8 @@ import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
 
-import websitedevelopmentTitleImg from '../../assets/images/icons/website-development-service.svg';
-import serviceImg1 from '../../assets/images/dev-1.jpg';
-import serviceImg2 from '../../assets/images/dev-2.jpg';
+import softwareDevelopmentTitleImg from '../../assets/images/icons/software-development.svg';
+import serviceBanner1 from '../../assets/images/dev-1.jpg';
 
 import uiuxIcon from '../../assets/images/icons/ux-design.png'
 import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
@@ -24,16 +23,16 @@ const Services = () => {
       <div className="mainSection">
         {/* Top title section start */}
         <section className="position-relative section-block inner-title-section1 overflow-hidden">
-          <div className="section-shape3"></div>
+          <div className="section-shape2"></div>
           <div className="container z-1 position-relative">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block1 position-relative uiux-service-title">
                   <h6 className="title-label text-white">Development Service</h6>
-                  <h2 className="main-title text-white text-capitalize">Website Development <span className="color-purple-lite">Service</span></h2>
+                  <h2 className="main-title text-white text-capitalize">Sofware Development <span className="color-purple-lite">Service</span></h2>
                   <p className="title-description text-white ms-0 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis necessitatibus cupiditate totam reiciendis, dicta esse voluptatibus quam expedita iste facilis aut quisquam blanditiis explicabo possimus natus dolorum nemo repellat?</p>
                   <a href="#" className="btn btn-yellow">Schedule a Free Consultation!</a>
-                  <img src={websitedevelopmentTitleImg} alt="Website Development" className="title-icon website-development-title-icon" />
+                  <img src={softwareDevelopmentTitleImg} alt="Software Development" className="title-icon software-development-title-icon" />
                 </div>
               </div>
             </div>
@@ -42,38 +41,80 @@ const Services = () => {
         {/* Top title section end */}
 
         {/* Service section1 start */}
-        <section className="position-relative section-block service-section1 bg-ghost-white symbol-white1">
+        <section className="position-relative section-block service-section1 bg-misty-rose">
+          <div className="container position-relative z-1">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="title-block">
+                  <h6 className="title-label">Software</h6>
+                  <h2 className="main-title">Custom Software <br/><span className="color-purple-lite">Development</span> Services</h2>
+                  <p>Accelerate your success with custom software outsourcing services, offering personalized and innovative solutions for every business need.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="service-banner-full-block">
+                  <img src={serviceBanner1} alt="" className="w-100" />
+                </div>
+                <div className="service-content-block mt-5 text-center">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum assumenda voluptatibus voluptatum vel dignissimos error distinctio autem eaque eveniet ipsum pariatur ipsa ea sequi expedita, architecto provident ipsam dolorem, saepe laudantium nam. Quia fugit id pariatur molestiae beatae recusandae voluptatibus possimus sed totam? Quos veritatis id iusto quisquam ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum assumenda voluptatibus voluptatum vel dignissimos error distinctio autem eaque eveniet ipsum pariatur ipsa ea sequi expedita, architecto provident ipsam dolorem, saepe laudantium nam. Quia fugit id pariatur molestiae beatae recusandae voluptatibus possimus sed totam? Quos veritatis id iusto quisquam ex?</p>
+                  <a class="btn btn-primary mt-4">Book Your Free Consultation <i class="ri-arrow-right-line ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        {/* Service section1 end */}
+
+        {/* Service section1 start */}
+        <section className="position-relative section-block service-section1 bg-white symbol-grey1">
           <div className="container position-relative z-1">
             <div class="row">
-              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title animation__char_come">Website development Company</h2>
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="title-block">
+                  <h2 className="main-title">Empowering Innovation Empowering Innovation Through Leading Custom <br/><span className="color-purple-lite">Software Development</span> Services</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit commodi tempora cupiditate! Eum, maiores facere ipsum iusto nisi debitis ipsam iure sint, deserunt quas culpa, eius hic laborum id magnam obcaecati. Repellat incidunt doloremque sunt iure odio ea corrupti nesciunt reiciendis accusantium quod itaque eligendi corporis laudantium, adipisci obcaecati cumque?</p>
                 </div>
               </div>
-              <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                <div class="development__wrapper">
-                  <div class="development__content">
-                    <p>Every decision we make needs to answer the million-dollar question: how will this benefit our partner’s goal best? We work to develop solutions</p>
-                    <p>We like to be different, in the same way that every mission is different. Every project is an opportunity to create result that will help you</p>
-                  </div>
-                  <ul>
-                    <li>+ API Development</li>
-                    <li>+ WordPress</li>
-                    <li>+ Cloud Migration</li>
-                    <li>+ Front End Development</li>
-                    <li>+ JavaScript</li>
-                    <li>+ Fluter Framework</li>
-                  </ul>
+            </div>
+            <div className="row">
+              <div className="col-12 col-md-3 col-lg-4 mb-4">
+                <div className="serviceCardBlock serviceCardRed">
+                  <h3>Software<br /> Consulting</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
-                <div class="development__img radius-left-30">
-                  <img src={serviceImg1} alt="Development Image" />
+              <div className="col-12 col-md-3 col-lg-4 mb-4">
+                <div className="serviceCardBlock serviceCardRed">
+                  <h3>MVP <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                <div class="development__img radius-right-30">
-                  <img src={serviceImg2} alt="Development Image" />
+              <div className="col-12 col-md-3 col-lg-4 mb-4">
+                <div className="serviceCardBlock serviceCardRed">
+                  <h3>Enterprise Software<br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
+                </div>
+              </div>
+              <div className="col-12 col-md-3 col-lg-4 mb-4">
+                <div className="serviceCardBlock serviceCardRed">
+                  <h3>Blockchain <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
+                </div>
+              </div>
+              <div className="col-12 col-md-3 col-lg-4 mb-4">
+                <div className="serviceCardBlock serviceCardRed">
+                  <h3>AI <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
+                </div>
+              </div>
+              <div className="col-12 col-md-3 col-lg-4">
+                <div className="serviceCardBlock serviceCardRed">
+                  <h3>API <br /> Development</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
             </div>
@@ -81,61 +122,8 @@ const Services = () => {
         </section>
         {/* Service section1 end */}
 
-        {/* Service section2 start */}
-        <section className="position-relative section-block feature__area-2 bg-white-pattern1 pb-0">
-          <div class="feature__top">
-            <div class="container">
-              <div class="row">
-                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
-                  <div class="sec-title-wrapper">
-                    <h2 class="sec-title title-anim">Features are more helpful to create creative shapes as well.</h2>
-                  </div>
-                </div>
-                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6">
-                  <div class="feature__text text-anim">
-                    <p>We are constantly rethinking the future by creating the next generation of products, brands and
-                      services from a hybrid perspective. The unthinkable today becomes inevitable.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature__btm">
-            <div class="container">
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="feature__list animation__feature2">
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">Web <br /> Development</h3>
-                      <p>Leverage powerful platforms and tools to build a vibrant and robust web presence.</p>
-                    </div>
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">E-commerce <br /> Development</h3>
-                      <p>Take your shop online with smart tools to start trading as your brand grows.</p>
-                    </div>
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">Content <br /> Management</h3>
-                      <p>Add, delete, and edit text, images, and audio/video with convenient admin controls.</p>
-                    </div>
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">Custom <br /> Development</h3>
-                      <p>Build customized web solutions tailored to your specifications and brand identity.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Service section2 end */}
-
         {/* Service section3 start */}
-        <section className="position-relative section-block service-section3 bg-seasalt symbol-white2">
+        <section className="position-relative section-block service-section3 bg-seasalt">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">

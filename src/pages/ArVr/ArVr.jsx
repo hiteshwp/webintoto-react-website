@@ -4,9 +4,8 @@ import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
 
-import websitedevelopmentTitleImg from '../../assets/images/icons/website-development-service.svg';
-import serviceImg1 from '../../assets/images/dev-1.jpg';
-import serviceImg2 from '../../assets/images/dev-2.jpg';
+import arvrTitleImg from '../../assets/images/icons/arvr.svg';
+import serviceImg1 from '../../assets/images/dev-2.jpg';
 
 import uiuxIcon from '../../assets/images/icons/ux-design.png'
 import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
@@ -24,16 +23,15 @@ const Services = () => {
       <div className="mainSection">
         {/* Top title section start */}
         <section className="position-relative section-block inner-title-section1 overflow-hidden">
-          <div className="section-shape3"></div>
+          <div className="section-shape4"></div>
           <div className="container z-1 position-relative">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block1 position-relative uiux-service-title">
-                  <h6 className="title-label text-white">Development Service</h6>
-                  <h2 className="main-title text-white text-capitalize">Website Development <span className="color-purple-lite">Service</span></h2>
+                  <h2 className="main-title text-white text-capitalize">AR/VR <span className="color-purple-lite">Service</span></h2>
                   <p className="title-description text-white ms-0 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis necessitatibus cupiditate totam reiciendis, dicta esse voluptatibus quam expedita iste facilis aut quisquam blanditiis explicabo possimus natus dolorum nemo repellat?</p>
                   <a href="#" className="btn btn-yellow">Schedule a Free Consultation!</a>
-                  <img src={websitedevelopmentTitleImg} alt="Website Development" className="title-icon website-development-title-icon" />
+                  <img src={arvrTitleImg} alt="AR/VR" className="title-icon arvr-title-icon" />
                 </div>
               </div>
             </div>
@@ -42,38 +40,42 @@ const Services = () => {
         {/* Top title section end */}
 
         {/* Service section1 start */}
-        <section className="position-relative section-block service-section1 bg-ghost-white symbol-white1">
+        <section className="position-relative section-block service-section1 bg-papaya-whip">
           <div className="container position-relative z-1">
-            <div class="row">
-              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title animation__char_come">Website development Company</h2>
+            <div className="row">
+              <div className="col-12 col-md-7 col-lg-7">
+                <div className="service-title-block1 mb-4">
+                  <h2 className="main-title text-capitalize">Shape the Future with an Innovative <sapn className="color-purple-lite">Augmented Reality Development</sapn> Company</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
                 </div>
-              </div>
-              <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                <div class="development__wrapper">
-                  <div class="development__content">
-                    <p>Every decision we make needs to answer the million-dollar question: how will this benefit our partner’s goal best? We work to develop solutions</p>
-                    <p>We like to be different, in the same way that every mission is different. Every project is an opportunity to create result that will help you</p>
-                  </div>
-                  <ul>
-                    <li>+ API Development</li>
-                    <li>+ WordPress</li>
-                    <li>+ Cloud Migration</li>
-                    <li>+ Front End Development</li>
-                    <li>+ JavaScript</li>
-                    <li>+ Fluter Framework</li>
+                <div className="service-list-block1">
+                  <ul className="service-list">
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Fintech</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Security</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Commerce</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Banking</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Logistics</h6>
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
-                <div class="development__img radius-left-30">
-                  <img src={serviceImg1} alt="Development Image" />
-                </div>
-              </div>
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                <div class="development__img radius-right-30">
-                  <img src={serviceImg2} alt="Development Image" />
+              <div className="col-12 col-md-5 col-lg-5">
+                <div className="service-img-block1 service-img-shadow-violet h-100">
+                  <img src={serviceImg1} alt="UI/UX Services" />
                 </div>
               </div>
             </div>
@@ -82,51 +84,42 @@ const Services = () => {
         {/* Service section1 end */}
 
         {/* Service section2 start */}
-        <section className="position-relative section-block feature__area-2 bg-white-pattern1 pb-0">
-          <div class="feature__top">
-            <div class="container">
-              <div class="row">
-                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
-                  <div class="sec-title-wrapper">
-                    <h2 class="sec-title title-anim">Features are more helpful to create creative shapes as well.</h2>
-                  </div>
+        <section className="position-relative section-block service-section1 bg-white-pattern">
+          <div className="container position-relative z-1">
+            <div className="row flex-row-reverse">
+              <div className="col-12 col-md-7 col-lg-7 ps-lg-5">
+                <div className="service-title-block1 mb-4">
+                  <h2 className="main-title text-capitalize">Shape the Future with an Innovative <sapn className="color-purple-lite">Augmented Reality Development</sapn> Company</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
                 </div>
-                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6">
-                  <div class="feature__text text-anim">
-                    <p>We are constantly rethinking the future by creating the next generation of products, brands and
-                      services from a hybrid perspective. The unthinkable today becomes inevitable.</p>
-                  </div>
+                <div className="service-list-block1">
+                  <ul className="service-list">
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Fintech</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Security</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Commerce</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Banking</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Logistics</h6>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="feature__btm">
-            <div class="container">
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="feature__list animation__feature2">
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">Web <br /> Development</h3>
-                      <p>Leverage powerful platforms and tools to build a vibrant and robust web presence.</p>
-                    </div>
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">E-commerce <br /> Development</h3>
-                      <p>Take your shop online with smart tools to start trading as your brand grows.</p>
-                    </div>
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">Content <br /> Management</h3>
-                      <p>Add, delete, and edit text, images, and audio/video with convenient admin controls.</p>
-                    </div>
-                    <div class="feature__item">
-                      <img src={uiuxIcon} alt="Feature Icon" />
-                      <h3 class="feature__title">Custom <br /> Development</h3>
-                      <p>Build customized web solutions tailored to your specifications and brand identity.</p>
-                    </div>
-                  </div>
+              <div className="col-12 col-md-5 col-lg-5">
+                <div className="service-img-block1 service-img-shadow-violet h-100">
+                  <img src={serviceImg1} alt="UI/UX Services" />
                 </div>
               </div>
             </div>
@@ -135,58 +128,42 @@ const Services = () => {
         {/* Service section2 end */}
 
         {/* Service section3 start */}
-        <section className="position-relative section-block service-section3 bg-seasalt symbol-white2">
-          <div className="container">
+        <section className="position-relative section-block service-section1 bg-misty-rose symbol-white2">
+          <div className="container position-relative z-1">
             <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="title-block">
-                  <h6 className="title-label">Our Process</h6>
-                  <h2 className="main-title">See what our projects have <br /> to go <span className="color-purple-lite">through..!</span></h2>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum molestias voluptatum ipsum sapiente sequi aliquam quas dolores quia ab, non impedit reiciendis vitae voluptatem quae quos debitis aut! Maiores neque voluptas, quod possimus, asperiores voluptatum, laboriosam fuga nemo vitae quos atque adipisci minus tenetur aspernatur harum doloribus officiis et.</p>
+              <div className="col-12 col-md-7 col-lg-7">
+                <div className="service-title-block1 mb-4">
+                  <h2 className="main-title text-capitalize">Shape the Future with an Innovative <sapn className="color-purple-lite">Augmented Reality Development</sapn> Company</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
+                </div>
+                <div className="service-list-block1">
+                  <ul className="service-list">
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Fintech</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Security</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Commerce</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Banking</h6>
+                    </li>
+                    <li>
+                      <i className="ri-corner-down-right-fill"></i>
+                      <h6>Logistics</h6>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div class="workflow__wrapper-6">
-                  <div class="row">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">Planning and <br />sketching</h6>
-                        <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">Team <br />working</h6>
-                        <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">Flowchart and <br />wireframe</h6>
-                        <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">User experience <br />Testing</h6>
-                        <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="cta-card-block">
-                  <h4>Let's create your dream project</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+              <div className="col-12 col-md-5 col-lg-5">
+                <div className="service-img-block1 service-img-shadow-violet h-100">
+                  <img src={serviceImg1} alt="UI/UX Services" />
                 </div>
               </div>
             </div>
@@ -194,7 +171,25 @@ const Services = () => {
         </section>
         {/* Service section3 end */}
 
-        {/* Service section3 start */}
+        {/* CTA section1 start */}
+        <section className="position-relative section-block service-section1 bg-electric-violet">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-12">
+                <div className="cta-block bg-electric-violet p-0">
+                  <div className="cta-content">
+                    <h3 className="cta-title text-white">Lat’s make someting great together</h3>
+                    <p className="cta-text text-white">Using year-over-year most design approaches and latest techs website will be lightly.</p>
+                    <a href="#" className="btn btn-yellow">Get A Quote?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* CTA section2 start */}
+
+        {/* Service section5 start */}
         <section className="position-relative section-block service-section4 bg-white-pattern">
           <div className="container">
             <div className="row">
@@ -281,7 +276,7 @@ const Services = () => {
             </div>
           </div>
         </section>
-        {/* Service section3 end */}
+        {/* Service section5 end */}
 
         {/* Testinomials section start */}
         <section className="position-relative section-block testimonial-section">

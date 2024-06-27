@@ -43,8 +43,8 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 col-md-12 col-lg-12">
               <div className="footer-cta-block">
-                <h4>15 years of building digital products and we are just getting started!</h4>
-                <a href="#" className="btn btn-primary">Start A Project <i className="ri-arrow-right-line ms-2"></i></a>
+                <h4 className="text-white">15 years of building digital products and we are just getting started!</h4>
+                <a href="#" className="btn btn-white">Start A Project <i className="ri-arrow-right-line ms-2"></i></a>
               </div>
             </div>
           </div>

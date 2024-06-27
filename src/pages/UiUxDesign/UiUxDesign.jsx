@@ -31,7 +31,7 @@ const Services = () => {
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block1 position-relative uiux-service-title">
                   <h6 className="title-label text-white">Design Service</h6>
-                  <h2 className="main-title text-white text-capitalize">UI/UX Design <span className="color-purple-lite">Services</span></h2>
+                  <h2 className="main-title text-white text-capitalize">UI/UX Design <span className="color-purple-lite">Service</span></h2>
                   <p className="title-description text-white ms-0 mb-4">Our in-house design studio targets delivering value-driven UI/UX designs that create engaging mobile and web apps. An innovative process, timely completion and superior user experience are our forte.</p>
                   <a href="#" className="btn btn-yellow">Schedule a Free Consultation!</a>
                   <img src={uiuxTitleImg} alt="UI/UX Design" className="title-icon uiux-title-icon" />
