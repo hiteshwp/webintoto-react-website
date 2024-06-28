@@ -1,5 +1,5 @@
 import React from 'react';
-import './../OurStory/OurStory.css';
+import './../SoftwareDevelopment/SoftwareDevelopment.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Common.css"
+
 import Home from './pages/Home/Home';
 import Services from './pages/Services/Services';
 import Ourstory from './pages/OurStory/OurStory';
@@ -13,7 +15,10 @@ import ArVr from './pages/ArVr/ArVr';
 import Iot from './pages/Iot/Iot';
 import DigitalMarketing from './pages/DigitalMarketing/DigitalMarketing';
 import Seo from './pages/Seo/Seo';
-import "./Common.css"
+import OurWork from './pages/OurWork/OurWork';
+import OurWorkDetails from './pages/OurWorkDetails/OurWorkDetails';
+import CaseStudies from './pages/CaseStudies/CaseStudies';
+
 
 function App() {
   return (
@@ -31,6 +36,9 @@ function App() {
         <Route path='/iot' element={<Iot />}/>
         <Route path='/digital-marketing' element={<DigitalMarketing />}/>
         <Route path='/seo' element={<Seo />}/>
+        <Route path='/our-work' element={<OurWork />}/>
+        <Route path='/our-work-details' element={<OurWorkDetails />}/>
+        <Route path='/case-studies' element={<CaseStudies />}/>
       </Routes>
     </>
   )
