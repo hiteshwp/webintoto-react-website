@@ -18,6 +18,7 @@ import Seo from './pages/Seo/Seo';
 import OurWork from './pages/OurWork/OurWork';
 import OurWorkDetails from './pages/OurWorkDetails/OurWorkDetails';
 import CaseStudies from './pages/CaseStudies/CaseStudies';
+import CaseStudiesDetails from './pages/CaseStudiesDetails/CaseStudiesDetails';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path='/our-work' element={<OurWork />}/>
         <Route path='/our-work-details' element={<OurWorkDetails />}/>
         <Route path='/case-studies' element={<CaseStudies />}/>
+        <Route path='/case-studies-details' element={<CaseStudiesDetails />}/>
       </Routes>
     </>
   )

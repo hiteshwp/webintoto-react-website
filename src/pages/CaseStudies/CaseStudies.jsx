@@ -34,7 +34,7 @@ const Services = () => {
         {/* Our work listing section start */}
         <section className="position-relative section-block bg-gray-pattern1 case-studies-list-section">
           <div className="case-studies-card">
-            <Link to="/" className="text-decoration-none">
+            <Link to="/case-studies-details" className="text-decoration-none">
               <div className="case-studies-img-block">
                 <img src={ourWorkImg} alt="" />
                 <div className="service-tag-list">
@@ -48,7 +48,7 @@ const Services = () => {
             </Link>
           </div>
           <div className="case-studies-card">
-            <Link to="/" className="text-decoration-none">
+            <Link to="/case-studies-details" className="text-decoration-none">
               <div className="case-studies-img-block">
                 <img src={ourWorkImg} alt="" />
                 <div className="service-tag-list">
@@ -62,7 +62,102 @@ const Services = () => {
             </Link>
           </div>
           <div className="case-studies-card">
-            <Link to="/" className="text-decoration-none">
+            <Link to="/case-studies-details" className="text-decoration-none">
+              <div className="case-studies-img-block">
+                <img src={ourWorkImg} alt="" />
+                <div className="service-tag-list">
+                  <span className="service-tag">Business</span>
+                </div>
+              </div>
+              <div className="case-studies-info">
+                <h3>We helped with developing comprehensive support solutions for internal processes and collaborative tools.</h3>
+                <span className="view-case-study">View Case study <i className="ri-arrow-right-line ms-2"></i></span>
+              </div>
+            </Link>
+          </div>
+          <div className="case-studies-card">
+            <Link to="/case-studies-details" className="text-decoration-none">
+              <div className="case-studies-img-block">
+                <img src={ourWorkImg} alt="" />
+                <div className="service-tag-list">
+                  <span className="service-tag">NGO</span>
+                </div>
+              </div>
+              <div className="case-studies-info">
+                <h3>We helped with developing comprehensive support solutions for internal processes and collaborative tools.</h3>
+                <span className="view-case-study">View Case study <i className="ri-arrow-right-line ms-2"></i></span>
+              </div>
+            </Link>
+          </div>
+          <div className="case-studies-card">
+            <Link to="/case-studies-details" className="text-decoration-none">
+              <div className="case-studies-img-block">
+                <img src={ourWorkImg} alt="" />
+                <div className="service-tag-list">
+                  <span className="service-tag">eCommerce</span>
+                </div>
+              </div>
+              <div className="case-studies-info">
+                <h3>We helped with developing comprehensive support solutions for internal processes and collaborative tools.</h3>
+                <span className="view-case-study">View Case study <i className="ri-arrow-right-line ms-2"></i></span>
+              </div>
+            </Link>
+          </div>
+          <div className="case-studies-card">
+            <Link to="/case-studies-details" className="text-decoration-none">
+              <div className="case-studies-img-block">
+                <img src={ourWorkImg} alt="" />
+                <div className="service-tag-list">
+                  <span className="service-tag">Business</span>
+                </div>
+              </div>
+              <div className="case-studies-info">
+                <h3>We helped with developing comprehensive support solutions for internal processes and collaborative tools.</h3>
+                <span className="view-case-study">View Case study <i className="ri-arrow-right-line ms-2"></i></span>
+              </div>
+            </Link>
+          </div>
+
+          <div className="row">
+            <div className="col-12 col-md-12 col-lg-12">
+                <div className="cta-card-block mt-0 mb-4 max-width-none">
+                  <h4>Let's create your dream project</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
+                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div className="case-studies-card">
+            <Link to="/case-studies-details" className="text-decoration-none">
+              <div className="case-studies-img-block">
+                <img src={ourWorkImg} alt="" />
+                <div className="service-tag-list">
+                  <span className="service-tag">NGO</span>
+                </div>
+              </div>
+              <div className="case-studies-info">
+                <h3>We helped with developing comprehensive support solutions for internal processes and collaborative tools.</h3>
+                <span className="view-case-study">View Case study <i className="ri-arrow-right-line ms-2"></i></span>
+              </div>
+            </Link>
+          </div>
+          <div className="case-studies-card">
+            <Link to="/case-studies-details" className="text-decoration-none">
+              <div className="case-studies-img-block">
+                <img src={ourWorkImg} alt="" />
+                <div className="service-tag-list">
+                  <span className="service-tag">eCommerce</span>
+                </div>
+              </div>
+              <div className="case-studies-info">
+                <h3>We helped with developing comprehensive support solutions for internal processes and collaborative tools.</h3>
+                <span className="view-case-study">View Case study <i className="ri-arrow-right-line ms-2"></i></span>
+              </div>
+            </Link>
+          </div>
+          <div className="case-studies-card">
+            <Link to="/case-studies-details" className="text-decoration-none">
               <div className="case-studies-img-block">
                 <img src={ourWorkImg} alt="" />
                 <div className="service-tag-list">
@@ -94,11 +189,6 @@ const Services = () => {
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="our-process-block">
                   <img src={ourProcess} alt="Our Process" />
-                </div>
-                <div className="cta-card-block">
-                  <h4>Let's create your dream project</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>
