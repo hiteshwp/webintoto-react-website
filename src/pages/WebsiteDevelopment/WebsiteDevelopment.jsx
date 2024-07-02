@@ -1,5 +1,5 @@
 import React from 'react';
-import './../OurStory/OurStory.css';
+import './../WebsiteDevelopment/WebsiteDevelopment.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
@@ -30,7 +30,7 @@ const Services = () => {
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block1 position-relative uiux-service-title">
                   <h6 className="title-label text-white">Development Service</h6>
-                  <h2 className="main-title text-white text-capitalize">Website Development <span className="color-purple-lite">Services</span></h2>
+                  <h2 className="main-title text-white text-capitalize">Website Development <span className="color-purple-lite">Service</span></h2>
                   <p className="title-description text-white ms-0 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis necessitatibus cupiditate totam reiciendis, dicta esse voluptatibus quam expedita iste facilis aut quisquam blanditiis explicabo possimus natus dolorum nemo repellat?</p>
                   <a href="#" className="btn btn-yellow">Schedule a Free Consultation!</a>
                   <img src={websitedevelopmentTitleImg} alt="Website Development" className="title-icon website-development-title-icon" />

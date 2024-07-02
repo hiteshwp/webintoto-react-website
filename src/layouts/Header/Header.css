@@ -67,7 +67,7 @@
     font-weight: 300;
     font-size: 1rem;
 }
-.mainMenuBlock .dropdown-menu a:hover, .mainMenuBlock a.active,.mainMenuBlock a:active{
+.mainMenuBlock .dropdown-menu a:hover, .mainMenuBlock a.active,.mainMenuBlock a:active,.mainMenuBlock a:focus{
     background: none;
     color: #745eff;
 }

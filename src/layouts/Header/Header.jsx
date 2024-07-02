@@ -20,21 +20,21 @@ const Header = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                      <Link>Our Work</Link>
+                      <Link to="/our-work">Our Work</Link>
                       <NavDropdown title="Services" id="basic-nav-dropdown">
                         <Link to="/ui-ux-design">UI/UX</Link>
                         <Link to="/website-development">Website Development</Link>
                         <Link to="/mobile-application">Mobile Application</Link>
-                        <Link>Software Development</Link>
-                        <Link>Blockchain</Link>
-                        <Link>AR/VR</Link>
-                        <Link>IOT</Link>
-                        <Link>Digital marketing</Link>
-                        <Link>SEO</Link>
+                        <Link to="/software-development">Software Development</Link>
+                        <Link to="/blockchain">Blockchain</Link>
+                        <Link to="/arvr">AR/VR</Link>
+                        <Link to="/iot">IOT</Link>
+                        <Link to="/digital-marketing">Digital marketing</Link>
+                        <Link to="/seo">SEO</Link>
                       </NavDropdown>
                       <NavDropdown title="Company" id="basic-nav-dropdown">
                         <Link to="/our-story">Our Story</Link>
-                        <Link>Case study</Link>
+                        <Link to="/case-studies">Case study</Link>
                         <Link>Contact Us</Link>
                       </NavDropdown>
                       <Link>Industries</Link>
