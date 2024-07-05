@@ -50,15 +50,15 @@ const Services = () => {
         {/* Service section1 start */}
         <section className="position-relative section-block service-section1 bg-white">
           <div className="container position-relative z-1">
-            <div class="row mb-5">
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title animation__char_come">Marketing Consulting Firm to Grow Your Business</h2>
+            <div className="row mb-5">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div className="sec-title-wrapper">
+                  <h2 className="sec-title animation__char_come">Marketing Consulting Firm to Grow Your Business</h2>
                 </div>
               </div>
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="development__wrapper">
-                  <div class="development__content grid-column-0 border-0 pb-0">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div className="development__wrapper">
+                  <div className="development__content grid-column-0 border-0 pb-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam, aliquid nostrum vel consequuntur vero voluptate fuga animi, at doloremque aliquam quisquam. Debitis ipsum rerum doloribus obcaecati molestiae cum quisquam!</p>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const Services = () => {
         {/* Service section2 start */}
         <section className="position-relative section-block service-section1 bg-yellow">
           <div className="container position-relative z-1">
-            <div class="row">
+            <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block">
                   <h2 className="main-title">What We Offer As a Marketing <br/><span className="color-purple-lite">Consulting Firm?</span></h2>

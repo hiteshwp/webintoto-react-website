@@ -5,8 +5,6 @@ import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
 
 import mobileApplicatoinTitleImg from '../../assets/images/icons/mobile-application-service.svg';
-import serviceImg1 from '../../assets/images/dev-1.jpg';
-import serviceImg2 from '../../assets/images/dev-2.jpg';
 
 import uiuxIcon from '../../assets/images/icons/ux-design.png'
 import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
@@ -44,15 +42,15 @@ const Services = () => {
         {/* Service section1 start */}
         <section className="position-relative section-block service-section1 bg-white symbol-grey1">
           <div className="container position-relative z-1">
-            <div class="row">
-              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title animation__char_come">Top Quality Mobile App Development Services</h2>
+            <div className="row">
+              <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                <div className="sec-title-wrapper">
+                  <h2 className="sec-title animation__char_come">Top Quality Mobile App Development Services</h2>
                 </div>
               </div>
-              <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                <div class="development__wrapper">
-                  <div class="development__content border-0 pb-0">
+              <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                <div className="development__wrapper">
+                  <div className="development__content border-0 pb-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam, aliquid nostrum vel consequuntur vero voluptate fuga animi, at doloremque aliquam quisquam. Debitis ipsum rerum doloribus obcaecati molestiae cum quisquam!</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos soluta minus eius nemo doloribus, mollitia necessitatibus eveniet cum reiciendis.</p>
                   </div>
@@ -124,21 +122,21 @@ const Services = () => {
         {/* Service section3 start */}
         <section className="position-relative section-block service-section3 bg-papaya-whip">
           <div className="container">
-            <div class="row">
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title title-anim">App Development Process</h2>
+            <div className="row">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div className="sec-title-wrapper">
+                  <h2 className="sec-title title-anim">App Development Process</h2>
                 </div>
               </div>
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="feature__text text-anim">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div className="feature__text text-anim">
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cupiditate optio adipisci aspernatur autem aliquid repellendus impedit expedita, nulla numquam! Necessitatibus, distinctio molestias natus explicabo, perspiciatis dolore recusandae cum harum reiciendis placeat iste magni odit eos commodi. Praesentium ipsam vero totam iusto optio facere! Nemo, eos? Sed dolorem ea aperiam?</p>
                 </div>
               </div>
             </div>
-            <div class="row mt-5 pt-5">
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                <div class="box-bullits">
+            <div className="row mt-5 pt-5">
+              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div className="box-bullits">
                   <h2>01</h2>
                   <h3>Plan</h3>
                   <hr className="serviceCardLine" />
@@ -151,8 +149,8 @@ const Services = () => {
                 </div>
               </div>
 
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                <div class="box-bullits">
+              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div className="box-bullits">
                   <h2>02</h2>
                   <h3>Design</h3>
                   <hr className="serviceCardLine" />
@@ -165,8 +163,8 @@ const Services = () => {
                 </div>
               </div>
 
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                <div class="box-bullits bg-nonesdq">
+              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                <div className="box-bullits bg-nonesdq">
                   <h2>03</h2>
                   <h3>Development</h3>
                   <hr className="serviceCardLine" />
@@ -184,7 +182,7 @@ const Services = () => {
                 <div className="cta-card-block max-width-none">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get in Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>

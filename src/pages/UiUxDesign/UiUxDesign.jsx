@@ -79,7 +79,7 @@ const Services = () => {
                       <h6>Expert UI UX Consulting Services</h6>
                     </li>
                   </ul>
-                  <a className="btn btn-primary">Get In Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get In Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-6">
@@ -183,7 +183,7 @@ const Services = () => {
                 <div className="cta-card-block">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get in Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>

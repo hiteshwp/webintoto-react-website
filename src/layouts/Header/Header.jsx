@@ -35,12 +35,12 @@ const Header = () => {
                       <NavDropdown title="Company" id="basic-nav-dropdown">
                         <Link to="/our-story">Our Story</Link>
                         <Link to="/case-studies">Case study</Link>
-                        <Link>Contact Us</Link>
+                        <Link to="/contact-us">Contact Us</Link>
                       </NavDropdown>
-                      <Link>Industries</Link>
-                      <Link>Technologies</Link>
-                      <Link>Career</Link>
-                      <Link>Blog</Link>
+                      <Link to="/industries">Industries</Link>
+                      <Link to="/technologies">Technologies</Link>
+                      <Link to="/career">Career</Link>
+                      <Link to="/blog">Blog</Link>
                     </Nav>
               </Navbar.Collapse>
             </Navbar>

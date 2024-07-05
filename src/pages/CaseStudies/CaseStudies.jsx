@@ -123,7 +123,7 @@ const Services = () => {
                 <div className="cta-card-block mt-0 mb-4 max-width-none">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get in Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
             </div>
           </div>

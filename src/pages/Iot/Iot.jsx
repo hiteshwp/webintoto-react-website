@@ -42,15 +42,15 @@ const Services = () => {
         {/* Service section1 start */}
         <section className="position-relative section-block service-section1 bg-misty-rose">
           <div className="container position-relative z-1">
-            <div class="row mb-5">
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title animation__char_come">Blockchain Development Company Empowering Businesses</h2>
+            <div className="row mb-5">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div className="sec-title-wrapper">
+                  <h2 className="sec-title animation__char_come">Blockchain Development Company Empowering Businesses</h2>
                 </div>
               </div>
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="development__wrapper">
-                  <div class="development__content grid-column-0 border-0 pb-0">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div className="development__wrapper">
+                  <div className="development__content grid-column-0 border-0 pb-0">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nam, aliquid nostrum vel consequuntur vero voluptate fuga animi, at doloremque aliquam quisquam. Debitis ipsum rerum doloribus obcaecati molestiae cum quisquam!</p>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ const Services = () => {
                 <div className="cta-card-block max-width-none mt-5">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get in Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>
