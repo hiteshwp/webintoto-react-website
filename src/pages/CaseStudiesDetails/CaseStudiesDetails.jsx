@@ -5,7 +5,6 @@ import Footer from '../../layouts/Footer/Footer';
 
 import csBannerImg1 from '../../assets/images/Leads-and-Sales-Report.webp'
 import serviceBanner1 from '../../assets/images/dev-1.jpg';
-import ourProcess from '../../assets/images/process-steps-img.svg';
 
 const Services = () => {
   return (

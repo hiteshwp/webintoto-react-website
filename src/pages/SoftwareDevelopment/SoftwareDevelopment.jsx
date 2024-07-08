@@ -60,7 +60,7 @@ const Services = () => {
                 </div>
                 <div className="service-content-block mt-5 text-center">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum assumenda voluptatibus voluptatum vel dignissimos error distinctio autem eaque eveniet ipsum pariatur ipsa ea sequi expedita, architecto provident ipsam dolorem, saepe laudantium nam. Quia fugit id pariatur molestiae beatae recusandae voluptatibus possimus sed totam? Quos veritatis id iusto quisquam ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum assumenda voluptatibus voluptatum vel dignissimos error distinctio autem eaque eveniet ipsum pariatur ipsa ea sequi expedita, architecto provident ipsam dolorem, saepe laudantium nam. Quia fugit id pariatur molestiae beatae recusandae voluptatibus possimus sed totam? Quos veritatis id iusto quisquam ex?</p>
-                  <a class="btn btn-primary mt-4">Book Your Free Consultation <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary mt-4">Book Your Free Consultation <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Services = () => {
         {/* Service section1 start */}
         <section className="position-relative section-block service-section1 bg-white symbol-grey1">
           <div className="container position-relative z-1">
-            <div class="row">
+            <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block">
                   <h2 className="main-title">Empowering Innovation Empowering Innovation Through Leading Custom <br/><span className="color-purple-lite">Software Development</span> Services</h2>
@@ -136,35 +136,35 @@ const Services = () => {
             </div>
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
-                <div class="workflow__wrapper-6">
-                  <div class="row">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">Planning and <br />sketching</h6>
+                <div className="workflow__wrapper-6">
+                  <div className="row">
+                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                      <div className="workflow__slide-6">
+                        <h6 className="workflow__title-6">Planning and <br />sketching</h6>
                         <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
                         </p>
                       </div>
                     </div>
 
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">Team <br />working</h6>
+                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                      <div className="workflow__slide-6">
+                        <h6 className="workflow__title-6">Team <br />working</h6>
                         <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
                         </p>
                       </div>
                     </div>
 
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">Flowchart and <br />wireframe</h6>
+                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                      <div className="workflow__slide-6">
+                        <h6 className="workflow__title-6">Flowchart and <br />wireframe</h6>
                         <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
                         </p>
                       </div>
                     </div>
 
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                      <div class="workflow__slide-6">
-                        <h6 class="workflow__title-6">User experience <br />Testing</h6>
+                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                      <div className="workflow__slide-6">
+                        <h6 className="workflow__title-6">User experience <br />Testing</h6>
                         <p>Modern and unique design practically point of view, it risks not meeting the huge expectations
                         </p>
                       </div>
@@ -174,7 +174,7 @@ const Services = () => {
                 <div className="cta-card-block">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get in Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>

@@ -88,7 +88,7 @@ const Services = () => {
         {/* Service section2 start */}
         <section className="position-relative section-block service-section1 bg-ghost-white">
           <div className="container position-relative z-1">
-            <div class="row">
+            <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block">
                   <h2 className="main-title">Our Result-Focused & Cost-Effective <br/><span className="color-purple-lite">Organic SEO</span></h2>
