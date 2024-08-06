@@ -98,7 +98,7 @@ img{max-width: 100%;}
     background: #F7F7F7 !important;
 }
 .bg-electric-violet{
-    background: #8F00FF !important;
+    background: #745eff !important;
 }
 .bg-lavender{
     background: #E6E6FA !important;
@@ -296,27 +296,27 @@ img{max-width: 100%;}
 .service-info-icon-card {
     background: #fff;
     margin-bottom: 30px;
-    padding: 50px;
+    padding: 35px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.02);
-    text-align: center;
+    text-align: left;
 }
 .service-info-icon {
-    width: 100px;
-    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    background: #745eff;
+    justify-content: flex-start;
+    font-size: 5rem;
+    background: none;
     border-radius: 100px;
-    color: #fff;
-    margin: 0 auto;
+    color: #141414;
+    margin: 0;
+    line-height: 1;
 }
 .service-info-icon-card h5 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-top: 30px;
-    font-weight: 700;
+    font-weight: 300;
+    margin-bottom: 15px;
 }
 .service-card-info {
     background: #fff;
@@ -705,6 +705,17 @@ img{max-width: 100%;}
 /*Service card css end*/
 
 /*Our work css start*/
+.filters-block {
+    display: flex;
+    gap: 20px;
+}
+.filter-item .form-select {
+    border-radius: 100px;
+    padding: 12px 40px 10px 15px;
+}
+.px-100{
+    padding:0 100px;
+}
 .our-work-main-title.main-title {
     font-size: 4rem;
 }
@@ -779,6 +790,7 @@ img{max-width: 100%;}
 .case-studies-list-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding: 100px;
 }
@@ -972,26 +984,59 @@ img{max-width: 100%;}
 .industries-tab-block .nav-tabs {
     border-bottom: 0;
     background: #fff;
-    padding: 10px;
-    border-radius: 100px;
+    padding: 0;
+    border-radius: 0;
     display: flex;
     gap: 5px;
+    position: relative;
+}
+.industries-tab-block .nav-tabs::before {
+    content: '';
+    position: absolute;
+    left: -5000px;
+    right: 0;
+    width: 10000px;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
 }
 .industries-tab-block .nav-tabs .nav-item .nav-link {
     border: none;
     padding: 18px 30px;
     background: #fff;
-    border: 1px solid #e6e6fa;
-    border-radius: 100px;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
     color: #141414;
+    font-weight: 600;
 }
 .industries-tab-block .nav-tabs .nav-item .nav-link:hover, .industries-tab-block .nav-tabs .nav-item .nav-link.active{
-    background: #8F00FF;
-    border-color: #8F00FF;
-    color: #fff;
+    border-color: #745eff;
+    color: #745eff;
 }
 .industries-content-block {
     margin-top: 80px;
+}
+.industries-our-work-title {
+    margin-top: 80px;
+}
+.industries-our-work-list-section {
+    padding: 0;
+    gap: 20px;
+}
+.industries-our-work-list-section .our-work-card {
+    width: calc(100% / 3 - 20px);
+    background: #fff;
+    padding: 5px;
+    border-radius: 25px
+}
+.industries-our-work-list-section .our-work-img-block {
+    border-radius: 20px 20px 0 0;
+}
+.industries-our-work-list-section .our-work-card h3, .industries-our-work-list-section .our-work-card p{
+    padding: 0 15px;
+}
+.industries-our-work-list-section .our-work-card p{
+    margin-bottom: 20px;
 }
 /*Industries css end*/
 

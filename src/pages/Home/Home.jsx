@@ -49,7 +49,7 @@ const Home = () => {
           <div className="heroHome-slider swiper-container">
             <div className="align-items-center">
               <div className="container">
-                <Carousel interval={5000}>
+                <Carousel interval={5000} slide={3}>
                   <Carousel.Item>
                     <div className="hero__title-wrapper d-flex flex-column justify-content-center text-left text-white">
                       <small className="mb-3">We Deliver</small>

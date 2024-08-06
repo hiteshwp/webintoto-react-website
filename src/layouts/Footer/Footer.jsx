@@ -13,14 +13,15 @@ const Footer = () => {
             <div className="col-12 col-md-12 col-lg-12">
               <div className="title-block">
                 <h6 className="title-label">Locations</h6>
-                <h2 className="main-title">Our Global <span className="color-purple-lite">presence</span></h2>
+                <h2 className="main-title">Our Global <span className="color-purple-lite">presence</span> in 5 Countries</h2>
+                <p className="title-description">With a global network established, we have our offices covering 5 countries India, Germany, UK, Canada, & USA! With a global impact, we have always created best user experiences with technology.</p>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-12 col-md-12 col-lg-12">
               <div className="world-map-block">
-                <div className="world-map-list">
+                {/* <div className="world-map-list">
                   <ul>
                     <li>
                       <span>Germany</span>
@@ -35,7 +36,7 @@ const Footer = () => {
                       <span>USA</span>
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 <img src={worldMap} alt="World Map" />
               </div>
             </div>
@@ -43,8 +44,8 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 col-md-12 col-lg-12">
               <div className="footer-cta-block">
-                <h4 className="text-white">15 years of building digital products and we are just getting started!</h4>
-                <a href="#" className="btn btn-white">Start A Project <i className="ri-arrow-right-line ms-2"></i></a>
+                <h4 className="text-dark">15 years of building digital products and we are just getting started!</h4>
+                <a href="#" className="btn btn-secondary">Start A Project <i className="ri-arrow-right-line ms-2"></i></a>
               </div>
             </div>
           </div>
