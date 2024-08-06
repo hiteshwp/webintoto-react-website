@@ -105,44 +105,40 @@ const Services = () => {
             </div>
 
             <div className="row justify-content-center">
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3 mt-5">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-mac-line"></i>
                   </span>
-                  <h5>Web <br /> Design</h5>
+                  <h5>Web <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-smartphone-line"></i>
                   </span>
-                  <h5>Mobile <br /> App Design</h5>
+                  <h5>Mobile App <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-shape-line"></i>
-                  </span>
-                  <h5>Wirerames & <br /> Prototyping</h5>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3 mt-5">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-compasses-2-line"></i>
                   </span>
-                  <h5>Logo <br /> Design</h5>
+                  <h5>Logo <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-pen-nib-line"></i>
                   </span>
-                  <h5>Graphic <br /> Design</h5>
+                  <h5>Graphic <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
             </div>

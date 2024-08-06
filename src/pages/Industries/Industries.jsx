@@ -3,12 +3,14 @@ import './../Industries/Industries.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 import industriesTitleImg from '../../assets/images/icons/industries.svg';
 import serviceBanner1 from '../../assets/images/dev-1.jpg';
+import ourWorkImg from '../../assets/images/our-work/ourwork-thumb-img1.webp'
 
 const Services = () => {
   return (
@@ -38,7 +40,7 @@ const Services = () => {
         {/* Top title section end */}
 
         {/* Service section1 start */}
-        <section className="position-relative section-block service-section1 bg-lavender symbol-white1">
+        <section className="position-relative section-block service-section1 bg-lavender symbol-white1 pt-0 overflow-hidden">
           <div className="container position-relative z-1">
             <div className="industries-tab-block">
               <Tabs defaultActiveKey="ecommerce" className="mb-3">
@@ -85,6 +87,96 @@ const Services = () => {
                               <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum reiciendis excepturi at ullam voluptates et!</span>
                             </li>
                           </ul>
+                        </div>
+                      </div>
+                      <div className="col-12 col-md-12 col-lg-12">
+                        <div className="title-block industries-our-work-title">
+                          <h2 className="main-title">Our Project in <br /> this <span className="color-purple-lite">Industries</span></h2>
+                        </div>
+                      </div>
+                      <div className="col-12 col-md-12 col-lg-12">
+                        <div className="our-work-list-section industries-our-work-list-section">
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
+                          <div className="our-work-card">
+                            <Link to="/our-work-details">
+                              <div className="our-work-img-block">
+                                <img src={ourWorkImg} alt="" />
+                              </div>
+                              <h3>Mental Health. For schools.</h3>
+                              <p>Branding, UI/UX, Mobile Development, Backend Development</p>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>

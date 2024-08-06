@@ -363,7 +363,8 @@
     opacity: 1;
 }
 .world-map-block {
-    padding: 20px 200px;
+    padding: 0 100px;
+    margin-bottom: -100px;
 }
 .world-map-list {
     display: flex;
