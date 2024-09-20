@@ -141,7 +141,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="row home-about-wrap">
-              <div className="col-12 col-md-6 col-lg-6">
+              <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-about-content-block ps-0">
                   <h6>What We Do, What You Get</h6>
                   <h3>Fresh Ideas. <br/> Thoughtful Design.</h3>
@@ -166,7 +166,7 @@ const Home = () => {
                   <a href="#" className="btn btn-secondary">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-6">
+              <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-about-img-block">
                   <img src={homeAbout} alt="About Us" className="home-about-img" />
                   <img src={symbol1} alt="Symbol" className="home-about-logo-symbol" />
@@ -190,7 +190,7 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-1">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -209,7 +209,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-2">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -228,7 +228,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-3">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -247,7 +247,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-4">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -266,7 +266,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-5">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -285,7 +285,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-6">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -304,7 +304,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-7">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -323,7 +323,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-8">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -342,7 +342,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-9">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">

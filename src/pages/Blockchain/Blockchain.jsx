@@ -58,49 +58,49 @@ const Services = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Blockchain <br /> Supply Chain</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Enterprise <br /> Blockchain</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Blockchain <br /> Consulting</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Co Development <br /> Model</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Smart Contract <br /> Development</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Blockchain <br /> Decentralization</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>E-Wallet <br /> Platform</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock serviceCardViolet">
                   <h3>Blockchain Cloud <br /> Services</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>

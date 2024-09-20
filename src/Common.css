@@ -1205,3 +1205,364 @@ img{max-width: 100%;}
     color: #745eff;
 }
 /*Blog css end*/
+
+/*Media css start*/
+@media screen and (max-width:1400px){
+    .technology-list-block{
+        gap: 8px;
+    }
+    .position-relative .container {
+        position: relative;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .btn-primary, .btn-secondary, .btn-white, .btn-yellow {
+        padding: 14px 20px;
+        font-size: .9rem;
+    }
+    .section-block {
+        padding: 60px 0;
+    }
+    .inner-title-section{
+        padding-top: 150px;
+        padding-bottom: 250px;
+    }
+    .inner-title-section1 {
+        padding-top: 150px;
+    }
+    .title-label {
+        font-size: .85rem;
+    }
+    .main-title{
+        font-size: 2rem;
+    }
+    .our-work-main-title.main-title {
+        font-size: 3rem;
+    }
+    .title-block {
+        margin-bottom: 20px;
+    }
+    .our-work-list-section, .blog-list-section {
+        gap: 40px;
+        padding: 30px;
+        justify-content: center;
+    }
+    .filters-block {
+        padding: 0 50px;
+    }
+    .our-work-card h3, .blog-card h3 {
+        font-size: 1.4rem;
+    }
+    .our-work-card, .blog-card {
+        margin-bottom: 0;
+    }
+    .title-icon {
+        max-width: 400px;
+    }
+    .mobile-application-title-icon {
+        max-width: 300px;
+        bottom: -70px;
+    }
+    .title-description {
+        max-width: 600px;
+    }
+    .service-info-icon-card {
+        padding: 20px;
+    }
+    .service-info-icon{
+        font-size: 3rem;
+    }
+    .service-info-icon-card h5 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    .service-card-info{
+        padding: 30px;
+    }
+    .service-card-info p {
+        font-size: 1rem;
+    }
+    .sec-title {
+        font-size: 2.2rem;
+    }
+    .development__wrapper ul li {
+        font-size: 1rem;
+    }
+    .development__content {
+        grid-gap: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .development__wrapper {
+        padding-bottom: 20px;
+    }
+    .feature__item {
+        padding: 75px 15px;
+    }
+    .feature__title {
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+    .feature__item img {
+        max-width: 60px;
+        margin-bottom: 20px;
+    }
+    .serviceCardBlock {
+        padding: 30px 20px;
+    }
+    .serviceCardBlock h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .serviceCenterBlock h4 {
+        font-size: 2rem;
+    }
+    .box-bullits:after {
+        width: 45px;
+        right: 10px;
+    }
+    .seo-title-icon {
+        max-width: 260px;
+        bottom: -60px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .hero__sub-title {
+        position: relative;
+    }
+    .our-work-text-info p {
+        font-size: 1rem;
+    }
+    .cta-card-block h4 {
+        font-size: 2rem;
+    }
+    .cta-card-block::after, .symbol-white2::before, .symbol-grey1::before{
+        width: 200px;
+        height: 100px;
+    }
+    .sec-title {
+        font-size: 2rem;
+    }
+    .inner-title-section1 {
+        padding-top: 120px;
+    }
+    .title-icon {
+        max-width: 300px;
+        bottom: -70px;
+    }
+    .service-list li h6 {
+        font-size: 1.1rem;
+    }
+    .workflow__title-6 {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+    .workflow__wrapper-6 {
+        padding-top: 30px;
+    }
+    .workflow__slide-6::before{
+        top: -36px;
+    }
+    .development__wrapper ul {
+        grid-template-columns: 180px auto;
+    }
+    .sec-title {
+        font-size: 1.6rem;
+    }
+    .cta-card-block {
+        margin: 50px auto 0;
+    }
+    .box-bullits:after{
+        display: none;
+    }
+    .service-section3 .row.mt-5.pt-5 {
+        padding-top: 0 !important;
+    }
+    .box-bullits h2 {
+        font-size: 4rem;
+    }
+    .box-bullits ul li {
+        font-size: 1rem;
+    }
+    .mobile-application-title-icon {
+        max-width: 200px;
+        bottom: -70px;
+    }
+    .software-development-title-icon, .arvr-title-icon, .digital-marketing-title-icon {
+        max-width: 220px;
+    }
+    .iot-title-icon {
+        max-width: 200px;
+    }
+    .serviceCardIcon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .seo-title-icon {
+        max-width: 180px;
+    }
+    .service-title-block1 {
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    body, .serviceCardBlock p, p{
+        font-size: .85rem;
+    }
+    .section-block {
+        padding: 40px 0;
+        overflow: hidden;
+    }
+    .global-presence-section {
+        overflow: inherit;
+    }
+    .main-title, .cta-card-block h4, .our-work-main-title.main-title, .sec-title {
+        font-size: 1.4rem;
+    }
+    .our-work-text-info p {
+        font-size: .85rem;
+        font-weight: 400;
+    }
+    .our-work-list-section, .blog-list-section {
+        gap: 15px;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .our-work-card, .blog-card {
+        width: calc(100% / 2 - 10px);
+    }
+    .filters-block {
+        padding: 0 15px;
+    }
+    .our-work-img-block, .blog-img-block {
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    .our-work-card h3, .blog-card h3 {
+        font-size: 1rem;
+    }
+    .symbol-white2::before, .testimonial-content::before{
+        width: 200px;
+        height: 140px;
+    }
+    .cta-card-block {
+        padding: 30px;
+        margin: 40px auto 0;
+    }
+    .cta-card-block::after {
+        width: 120px;
+        height: 70px;
+    }
+    .sec-title{
+        margin-bottom: 15px;
+    }
+    .our-work-logo {
+        max-width: 240px;
+        margin: 0 auto 30px;
+    }
+    .development__wrapper {
+        padding-bottom: 0;
+    }
+    .inner-title-section1 {
+        padding-top: 110px;
+        padding-bottom: 150px;
+    }
+    .title-icon {
+        max-width: 280px;
+        bottom: -70%;
+    }
+    .service-title-block1 {
+        margin-bottom: 1rem;
+        padding: 0 !important;
+    }
+    .service-list-block1 {
+        margin-bottom: 30px;
+    }
+    .service-img-block1::before, .service-img-shadow1::before{
+        right: -5px;
+        bottom: -5px;
+    }
+    .service-info-icon-card h5{
+        font-weight: 600;
+    }
+    .service-info-icon-card h5 br {
+        display: none;
+    }
+    .industries-service-card-block .service-card-icon-wrapper {
+        margin-top: -30px;
+    }
+    .development__content {
+        grid-gap: 20px;
+    }
+    .development__wrapper ul {
+        grid-template-columns: 150px auto;
+    }
+    .development__wrapper ul li {
+        font-size: .85rem;
+    }
+    .development__img.radius-left-30{
+        border-radius: 30px 30px 0 0;
+        margin-bottom: 15px;
+    }
+    .development__img.radius-right-30{
+        border-radius: 0 0 30px 30px;
+    }
+    .feature__list {
+        grid-gap: 10px;
+        grid-template: none;
+    }
+    .feature__item {
+        padding: 15px 0;
+        border-right: 0;
+    }
+    .workflow__slide-6 {
+        padding-left: 30px;
+        padding-bottom: 15px;
+    }
+    .workflow__wrapper-6 {
+        padding-top: 0;
+        border-left: 2px solid #fff;
+        border-top: 0;
+    }
+    .workflow__slide-6::before {
+        top: 0;
+        left: -5px;
+    }
+    .mobile-application-title-icon {
+        max-width: 180px;
+        bottom: -155px;
+    }
+    .serviceCenterBlock h4 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .serviceCardLine {
+        max-width: inherit;
+    }
+    .box-bullits ul {
+        padding-left: 15px;
+    }
+    .blockchain-title-icon {
+        max-width: 250px;
+        bottom: -150px;
+    }
+    .arvr-title-icon {
+        bottom: -78%;
+        max-width: 250px;
+    }
+    .service-list li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .service-list li h6 {
+        font-size: 1rem;
+    }
+    .iot-title-icon, .seo-title-icon {
+        max-width: 180px;
+        bottom: -75%;
+    }
+}
+/*Media css end*/

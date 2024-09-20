@@ -58,25 +58,25 @@ const Services = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock">
                   <h3>App <br /> Development</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock">
                   <h3>Blockchain <br /> Development</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock">
                   <h3>Augmented <br /> Reality</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3 mb-4">
+              <div className="col-12 col-md-6 col-lg-3 mb-4">
                 <div className="serviceCardBlock">
                   <h3>Game <br /> Development</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
