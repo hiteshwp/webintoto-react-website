@@ -16,7 +16,7 @@ const Services = () => {
       
       <div className="mainSection">
         {/* Top title section start */}
-        <section className="position-relative section-block inner-title-section">
+        <section className="position-relative section-block inner-title-section blog-details-inner-title-section">
           <div className="section-shape1"></div>
           <div className="container z-1 position-relative">
             <div className="row">
@@ -37,7 +37,7 @@ const Services = () => {
         {/* Top title section end */}
 
         {/* Blog details section start */}
-        <section className="position-relative section-block bg-white-pattern">
+        <section className="position-relative section-block bg-white-pattern inner-blog-details-section">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
@@ -47,7 +47,7 @@ const Services = () => {
                   </div>
                   <div className="blog-details-info-block">
                     <div className="row">
-                      <div className="col-12 col-md-8 col-lg-9">
+                      <div className="col-12 col-md-8 col-lg-8">
                         <div className="blog-details-info">
                           <h4>The tech landscape is evolving, and choosing the right software development company could make all the difference for businesses in 2024.</h4>
                           
@@ -115,7 +115,7 @@ const Services = () => {
                           </ul>
                         </div>
                       </div>
-                      <div className="col-12 col-md-4 col-lg-3">
+                      <div className="col-12 col-md-4 col-lg-4">
                         <div className="blog-recent-posts">
                           <h3>Recent Posts</h3>
                           <ul className="blog-recent-post-list">

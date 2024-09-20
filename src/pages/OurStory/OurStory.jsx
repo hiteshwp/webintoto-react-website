@@ -24,7 +24,7 @@ const Services = () => {
       
       <div className="mainSection">
         {/* Top title section start */}
-        <section className="position-relative section-block inner-title-section">
+        <section className="position-relative section-block inner-title-section ourstory-inner-title-section">
           <div className="section-shape1"></div>
           <div className="container z-1 position-relative">
             <div className="row">
