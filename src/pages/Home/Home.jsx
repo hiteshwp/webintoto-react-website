@@ -35,6 +35,7 @@ import react from '../../assets/images/tech-logo/react-native.png'
 import flutter from '../../assets/images/tech-logo/flutter.png'
 import apple from '../../assets/images/tech-logo/apple.png'
 import android from '../../assets/images/tech-logo/android.png'
+import testimonialUser from '../../assets/images/team/team-img-1.jpg'
 
 const Home = () => {
   return (
@@ -444,26 +445,47 @@ const Home = () => {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="client-testimonials">
-                  <Carousel interval={7000}>
+                  <Carousel interval={7000000}>
                     <Carousel.Item>
                       <div className="testimonial-content">
                         <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
-                        <h4 className="review-heading">Michael Brian</h4>
-                        <h6 className="review-sub-heading">Vice President</h6>
+                        <div className="testimonial-user-info-block">
+                          <div className="testimonial-user-img">
+                            <img src={testimonialUser} />
+                          </div>
+                          <div className="testimonial-user-info">
+                            <h4 className="review-heading">Michael Brian</h4>
+                            <h6 className="review-sub-heading">Vice President</h6>
+                          </div>
+                        </div>
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
                       <div className="testimonial-content">
                         <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
-                        <h4 className="review-heading">Michael Brian</h4>
-                        <h6 className="review-sub-heading">Vice President</h6>
+                        <div className="testimonial-user-info-block">
+                          <div className="testimonial-user-img">
+                            <img src={testimonialUser} />
+                          </div>
+                          <div className="testimonial-user-info">
+                            <h4 className="review-heading">Michael Brian</h4>
+                            <h6 className="review-sub-heading">Vice President</h6>
+                          </div>
+                        </div>
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
                       <div className="testimonial-content">
                         <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
-                        <h4 className="review-heading">Michael Brian</h4>
-                        <h6 className="review-sub-heading">Vice President</h6>
+                        <div className="testimonial-user-info-block">
+                          <div className="testimonial-user-img">
+                            <img src={testimonialUser} />
+                          </div>
+                          <div className="testimonial-user-info">
+                            <h4 className="review-heading">Michael Brian</h4>
+                            <h6 className="review-sub-heading">Vice President</h6>
+                          </div>
+                        </div>
                       </div>
                     </Carousel.Item>
                   </Carousel> 
