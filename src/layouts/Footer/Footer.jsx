@@ -57,7 +57,7 @@ const Footer = () => {
       <footer className="position-relative section-block footer-section">
          <div className="container">
             <div className="row">
-              <div className="col-12 col-md-3 col-lg-3">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="footer-info">
                   <a href="#" className="footer-logo">
                     <img src={webintotoLogo} alt="Webintoto" />
@@ -84,7 +84,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="footer-link">
                   <h5 className="footer-main-title">Webintoto</h5>
                   <ul className="footer-link-list">
@@ -109,7 +109,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="footer-link">
                   <h5 className="footer-main-title">Our Services</h5>
                   <ul className="footer-link-list">
@@ -143,7 +143,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-3">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="footer-link">
                   <h5 className="footer-main-title">Industries</h5>
                   <ul className="footer-link-list">

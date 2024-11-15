@@ -62,19 +62,19 @@ const Services = () => {
                   <img src={serviceBanner1} alt="" className="w-100" />
                 </div>
                 <div className="row">
-                  <div className="col-12 col-md-3 col-lg-4 mb-4">
+                  <div className="col-12 col-md-4 col-lg-4 mb-4">
                     <div className="serviceCardBlock serviceCardRed">
                       <h3>Lorem<br /> lipsum</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                     </div>
                   </div>
-                  <div className="col-12 col-md-3 col-lg-4 mb-4">
+                  <div className="col-12 col-md-4 col-lg-4 mb-4">
                     <div className="serviceCardBlock serviceCardRed">
                       <h3>Lorem<br /> lipsum</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                     </div>
                   </div>
-                  <div className="col-12 col-md-3 col-lg-4 mb-4">
+                  <div className="col-12 col-md-4 col-lg-4 mb-4">
                     <div className="serviceCardBlock serviceCardRed">
                       <h3>Lorem<br /> lipsum</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>

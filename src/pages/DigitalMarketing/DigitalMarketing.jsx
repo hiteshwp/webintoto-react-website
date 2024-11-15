@@ -87,7 +87,7 @@ const Services = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={marketResearch} alt="" />
@@ -96,7 +96,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={marketingAssessment} alt="" />
@@ -105,7 +105,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={strategicPositioning} alt="" />
@@ -114,7 +114,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={targetMarketing} alt="" />
@@ -123,7 +123,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={marketingPlan} alt="" />
@@ -132,7 +132,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={socialMedia} alt="" />

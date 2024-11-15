@@ -35,6 +35,7 @@ import react from '../../assets/images/tech-logo/react-native.png'
 import flutter from '../../assets/images/tech-logo/flutter.png'
 import apple from '../../assets/images/tech-logo/apple.png'
 import android from '../../assets/images/tech-logo/android.png'
+import testimonialUser from '../../assets/images/team/team-img-1.jpg'
 
 const Home = () => {
   return (
@@ -141,7 +142,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="row home-about-wrap">
-              <div className="col-12 col-md-6 col-lg-6">
+              <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-about-content-block ps-0">
                   <h6>What We Do, What You Get</h6>
                   <h3>Fresh Ideas. <br/> Thoughtful Design.</h3>
@@ -166,7 +167,7 @@ const Home = () => {
                   <a href="#" className="btn btn-secondary">Learn More <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-6">
+              <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-about-img-block">
                   <img src={homeAbout} alt="About Us" className="home-about-img" />
                   <img src={symbol1} alt="Symbol" className="home-about-logo-symbol" />
@@ -190,7 +191,7 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-1">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -209,7 +210,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-2">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -228,7 +229,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-3">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -247,7 +248,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-4">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -266,7 +267,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-5">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -285,7 +286,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-6">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -304,7 +305,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-7">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -323,7 +324,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-8">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -342,7 +343,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="service-card-block sc-bg-9">
                   <div className="service-card-icon-wrapper">
                     <span className="service-card-icon">
@@ -444,26 +445,47 @@ const Home = () => {
             <div className="row">
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="client-testimonials">
-                  <Carousel interval={7000}>
+                  <Carousel interval={7000000}>
                     <Carousel.Item>
                       <div className="testimonial-content">
                         <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
-                        <h4 className="review-heading">Michael Brian</h4>
-                        <h6 className="review-sub-heading">Vice President</h6>
+                        <div className="testimonial-user-info-block">
+                          <div className="testimonial-user-img">
+                            <img src={testimonialUser} />
+                          </div>
+                          <div className="testimonial-user-info">
+                            <h4 className="review-heading">Michael Brian</h4>
+                            <h6 className="review-sub-heading">Vice President</h6>
+                          </div>
+                        </div>
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
                       <div className="testimonial-content">
                         <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
-                        <h4 className="review-heading">Michael Brian</h4>
-                        <h6 className="review-sub-heading">Vice President</h6>
+                        <div className="testimonial-user-info-block">
+                          <div className="testimonial-user-img">
+                            <img src={testimonialUser} />
+                          </div>
+                          <div className="testimonial-user-info">
+                            <h4 className="review-heading">Michael Brian</h4>
+                            <h6 className="review-sub-heading">Vice President</h6>
+                          </div>
+                        </div>
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
                       <div className="testimonial-content">
                         <p className="review-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, neque dolores? Est nesciunt porro accusamus harum, aliquam animi voluptate? Asperiores laborum exercitationem assumenda mollitia porro ex dignissimos ducimus animi laboriosam velit facere minima, similique molestias soluta eaque quam ipsam itaque inventore dolorem reiciendis quidem. Consequuntur error dolores autem quae cumque?</p>
-                        <h4 className="review-heading">Michael Brian</h4>
-                        <h6 className="review-sub-heading">Vice President</h6>
+                        <div className="testimonial-user-info-block">
+                          <div className="testimonial-user-img">
+                            <img src={testimonialUser} />
+                          </div>
+                          <div className="testimonial-user-info">
+                            <h4 className="review-heading">Michael Brian</h4>
+                            <h6 className="review-sub-heading">Vice President</h6>
+                          </div>
+                        </div>
                       </div>
                     </Carousel.Item>
                   </Carousel> 

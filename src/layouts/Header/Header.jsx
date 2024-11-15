@@ -46,7 +46,10 @@ const Header = () => {
             </Navbar>
           </div>
           <div className="headerActionBlock">
-            <a className="btn btn-primary">Get A Quote <i className="ri-arrow-right-line ms-2"></i></a>
+            <a className="btn btn-primary">Get A Quote 
+              <i className="ri-arrow-right-line ms-2"></i>
+              <i className="ri-customer-service-2-fill"></i>
+            </a>
           </div>
         </div>
       </div>

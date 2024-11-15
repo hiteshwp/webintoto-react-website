@@ -51,14 +51,14 @@ const Services = () => {
           <div className="container position-relative z-1">
             <div className="serviceFullCardBlock bg-lavender mb-5">
               <div className="row align-items-center">
-                <div className="col-12 col-md-6 col-lg-6">
+                <div className="col-12 col-md-12 col-lg-6">
                   <div className="service-title-block1 p-4">
                     <h2 className="main-title text-capitalize">Increasing Organic Search Traffic to generate more <sapn className="color-purple-lite">Leads and Sales</sapn></h2>
                     <p className="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
                   </div>
                 </div>
-                <div className="col-12 col-md-6 col-lg-6">
+                <div className="col-12 col-md-12 col-lg-6">
                   <div className="service-img-block1 img-shadow-none h-100">
                     <img src={serviceBanner1} alt="Service Banner" />
                   </div>
@@ -67,14 +67,14 @@ const Services = () => {
             </div>
             <div className="serviceFullCardBlock bg-pink mb-5">
               <div className="row flex-row-reverse align-items-center">
-                <div className="col-12 col-md-6 col-lg-6">
+                <div className="col-12 col-md-12 col-lg-6">
                   <div className="service-title-block1 p-4">
                     <h2 className="main-title text-capitalize">Increasing Organic Search Traffic to generate more <sapn className="color-purple-lite">Leads and Sales</sapn></h2>
                     <p className="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quae assumenda, dicta veritatis placeat blanditiis veniam, quod a quis aliquid, ducimus cum deleniti voluptatum! Sint quisquam eaque sed harum sapiente iure facilis earum, soluta iste eveniet itaque, quod, temporibus accusantium modi quaerat accusamus nobis ipsa alias voluptatibus. Sunt, molestias officia!</p>
                   </div>
                 </div>
-                <div className="col-12 col-md-6 col-lg-6">
+                <div className="col-12 col-md-12 col-lg-6">
                   <div className="service-img-block1 img-shadow-none h-100">
                     <img src={serviceBanner1} alt="Service Banner" />
                   </div>
@@ -97,7 +97,7 @@ const Services = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={marketResearch} alt="" />
@@ -106,7 +106,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={marketingAssessment} alt="" />
@@ -115,7 +115,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={strategicPositioning} alt="" />
@@ -124,7 +124,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={targetMarketing} alt="" />
@@ -133,7 +133,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4 mb-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={marketingPlan} alt="" />
@@ -142,7 +142,7 @@ const Services = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas, facere voluptas harum blanditiis voluptatem explicabo optio minus quis culpa.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-3 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="serviceCardBlock">
                   <div className="serviceCardIcon">
                     <img src={socialMedia} alt="" />

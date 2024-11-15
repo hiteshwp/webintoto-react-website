@@ -338,14 +338,30 @@
     color: #745eff;
     font-size: 4.2rem;
 }
+.testimonial-user-info-block {
+    display: flex;
+    align-items: center;
+}
+.testimonial-user-img {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+.testimonial-user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .review-heading {
-    padding-left: 70px;
+    padding-left: 0;
     margin-bottom: 5px;
     font-size: 1.4rem;
     font-weight: 700;
 }
 .review-sub-heading {
-    padding-left: 70px;
+    padding-left: 0;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -387,3 +403,169 @@
     font-size: .85rem;
     line-height: 1;
 }
+
+/*Media css start*/
+@media screen and (max-width:1400px){
+    .hero__title-wrapper h1 {
+        font-size: 6rem;
+    }
+    .hero__sub-title{
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .hero__title-wrapper h1 {
+        font-size: 5rem;
+    }
+    .hero__sub-title {
+        font-size: 1rem;
+        position: relative;
+        margin-bottom: 30px;
+        right: 0;
+    }
+    .cta-block, .footer-cta-block{
+        padding: 50px;
+    }
+    .cta-content {
+        width: 60%;
+        position: relative;
+        z-index: 1;
+    }
+    .testimonial-content{
+        padding: 20px;
+    }
+    .review-paragraph {
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .client-logo-item {
+        padding: 30px 10px;
+    }
+    .home-about-wrap {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .home-about-content-block h3 {
+        font-size: 2.4rem;
+    }
+    .home-about-content-block p, .cta-text {
+        font-size: 1rem;
+    }
+    .cta-content {
+        width: 100%;
+    }
+    .cta-block::after {
+        width: 250px;
+        height: 150px;
+    }
+    .cta-title {
+        font-size: 2rem;
+    }
+    .cta-text {
+        padding-right: 0;
+    }
+    .technology-item-block {
+        width: calc(100% / 7);
+    }
+}
+
+@media screen and (max-width:767px){
+    .hero__title-wrapper h1 {
+        font-size: 2.4rem;
+    }
+    .hero__area {
+        min-height: initial;
+        position: relative;
+        overflow: hidden;
+    }
+    .title-block {
+        margin-bottom: 20px;
+    }
+    .counter-wrapper {
+        padding:10px 20px;
+    }
+    .counter-item {
+        width: calc(100% / 2);
+        position: relative;
+        margin: 10px 0;
+    }
+    .counter-item:not(:last-child)::after{
+        width: 0;
+    }
+    .client-logo-wrapper {
+       flex-wrap: wrap;
+    }
+    .client-logo-item {
+        padding: 20px 10px;
+        width: calc(100% / 3);
+    }
+    .home-about-content-block h6{
+        font-size: .85rem;
+        letter-spacing: 0.2rem;
+    }
+    .home-about-content-block h3 {
+        font-size: 1.4rem;
+    }
+    .home-about-content-block p, .cta-text{
+        font-size: 0.85rem !important;
+    }
+    .home-about-content-block{
+        padding-right: 0;
+    }
+    .text-heading-4, .text-heading-5 {
+        font-size: 1.1rem;
+    }
+    .home-about-logo-symbol {
+        max-width: 200px;
+    }
+    .service-card-title {
+        font-size: 1.2rem;
+    }
+    .service-card-block{
+        padding: 20px;
+    }
+    .cta-block {
+        padding: 30px;
+    }
+    .cta-title {
+        font-size: 1.6rem;
+    }
+    .cta-block::after {
+        width: 130px;
+        height: 80px;
+    }
+    .technology-item-block {
+        width: calc(100% / 3 - 10px);
+    }
+    .review-paragraph {
+        padding: 10px;
+    }
+    .review-paragraph::before{
+        left: -20px;
+        top: -40px;
+        font-size: 3.2rem;
+    }
+    .review-paragraph::after{
+        right: -10px;
+        bottom: -40px;
+        font-size: 3.2rem;
+    }
+    .review-heading {
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+    .review-sub-heading {
+        padding-left: 0;
+    }
+    .testimonial-content::before{
+        width: 200px;
+        height: 140px;
+    }
+    .client-testimonials .carousel-indicators {
+        bottom: -45px;
+    }
+}
+/*Media css end*/
