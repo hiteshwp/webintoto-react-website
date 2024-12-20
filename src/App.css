@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Placeholder css */
+.placeholder .header, .placeholder .hero, .placeholder .stats, .placeholder .technologies, .placeholder .testimonials, .placeholder .global-presence, .placeholder .footer {
+  padding: 20px;
+  margin: 20px 0;
+}
+.placeholder .hero, .placeholder .technologies, .placeholder .global-presence {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.placeholder .hero-text, .placeholder .hero-image, .placeholder .tech-item, .placeholder .testimonial, .placeholder .map {
+  flex: 1;
+  margin: 10px;
+}
