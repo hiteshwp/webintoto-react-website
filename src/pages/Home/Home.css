@@ -338,14 +338,30 @@
     color: #745eff;
     font-size: 4.2rem;
 }
+.testimonial-user-info-block {
+    display: flex;
+    align-items: center;
+}
+.testimonial-user-img {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+.testimonial-user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .review-heading {
-    padding-left: 70px;
+    padding-left: 0;
     margin-bottom: 5px;
     font-size: 1.4rem;
     font-weight: 700;
 }
 .review-sub-heading {
-    padding-left: 70px;
+    padding-left: 0;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -538,11 +554,11 @@
         font-size: 3.2rem;
     }
     .review-heading {
-        padding-left: 10px;
+        padding-left: 0;
         font-size: 1.2rem;
     }
     .review-sub-heading {
-        padding-left: 10px;
+        padding-left: 0;
     }
     .testimonial-content::before{
         width: 200px;

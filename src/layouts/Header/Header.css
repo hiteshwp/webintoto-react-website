@@ -71,6 +71,9 @@
     background: none;
     color: #745eff;
 }
+.headerActionBlock .btn i.ri-customer-service-2-fill {
+    display: none;
+}
 
 /*Media css start*/
 @media screen and (max-width:1400px){
@@ -154,18 +157,42 @@
     .mainMenuBlock .dropdown-menu a{
         margin: 0;
     }
+    .mainMenuBlock .navbar-expand .navbar-nav .dropdown-menu {
+        position: relative;
+        border: 0px solid #434344;
+        padding-left: 15px;
+    }
 }
 
-@media screen and (max-width:767px){
-
-}
-
-@media screen and (max-width:379px){
+@media screen and (max-width:419px){
     .brandLogo {
         max-width: 120px;
     }
     .headerNavBlock {
         width: calc(100% - 120px);
-    }    
+    }
+    .headerActionBlock .btn i.ri-arrow-right-line {
+        display: none;
+    }
+    .headerActionBlock .btn {
+        font-size: 0;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+    }
+    .headerActionBlock {
+        position: fixed;
+        right: 0;
+        top: 85vh;
+        z-index: -1;
+    }
+    .headerActionBlock .btn i.ri-customer-service-2-fill {
+        display: block;
+        font-size: 1.6rem;
+    }
 }
 /*Media css end*/

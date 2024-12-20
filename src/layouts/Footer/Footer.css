@@ -180,5 +180,17 @@
     .footer-section .col-12.col-md-6.col-lg-3:not(:last-child) {
         margin-bottom: 30px;
     }
+    .footer-link-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .footer-link-list li {
+        width: calc(100% / 2 - 10px);
+    }
+    .footer-link-list li a{
+        margin: 0;
+        align-items: flex-start;
+    }
 }
 /*Media css end*/
