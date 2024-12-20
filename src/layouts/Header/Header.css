@@ -31,25 +31,27 @@
     margin-left: auto;
     position: relative;
 }
-.mainMenuBlock .nav-link {
+.mainMenuBlock a{
     color: #fff;
     font-size: 1.1rem;
     font-weight: 300;
     padding: 0 15px !important;
 }
-.mainMenuBlock .nav-link:hover {
+.mainMenuBlock a:hover {
     color: #745eff;
 }
-.mainMenuBlock .navbar-nav .nav-link.active,.mainMenuBlock .navbar-nav .nav-link.show {
+.mainMenuBlock .navbar-nav a.active,.mainMenuBlock .navbar-nav a.show {
     color: #745eff;
 }
-.mainMenuBlock .dropdown-item {
+.mainMenuBlock a {
     padding: 10px 15px;
     line-height: 1;
     font-weight: 400;
+    text-decoration: none;
+    display: block;
 }
 .mainMenuBlock .dropdown-toggle::after {
-    top: 4px;
+    top: 2px;
     position: relative;
 }
 .mainMenuBlock .navbar-expand .navbar-nav .dropdown-menu {
@@ -58,10 +60,139 @@
     backdrop-filter: blur(10px);
     border: 1px solid #434344;
 }
-.mainMenuBlock .dropdown-menu .dropdown-item{
+.mainMenuBlock .dropdown-menu a {
     color: #fff;
+    white-space: nowrap;
+    margin: 20px 0;
+    font-weight: 300;
+    font-size: 1rem;
 }
-.mainMenuBlock .dropdown-menu .dropdown-item:hover, .mainMenuBlock .dropdown-item.active,.mainMenuBlock .dropdown-item:active{
+.mainMenuBlock .dropdown-menu a:hover, .mainMenuBlock a.active,.mainMenuBlock a:active,.mainMenuBlock a:focus{
     background: none;
     color: #745eff;
 }
+.headerActionBlock .btn i.ri-customer-service-2-fill {
+    display: none;
+}
+
+/*Media css start*/
+@media screen and (max-width:1400px){
+    .brandLogo {
+        max-width: 200px;
+    }
+    .headerNavBlock {
+        width: calc(100% - 200px);
+    }
+    .mainMenuBlock a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .brandLogo {
+        max-width: 160px;
+    }
+    .headerNavBlock {
+        width: calc(100% - 160px);
+    }
+    .mainMenuBlock a {
+        font-size: .95rem;
+        padding: 0 10px !important;
+    }
+}
+
+@media screen and (max-width:991px){
+    .header-section {
+        padding: 0 5px;
+    }
+    .header-container{
+        position: relative;
+        padding: 5px 10px;
+    }
+    .navbar-expand .navbar-collapse.collapse:not(.show) {
+        display: none !important;
+    }
+    .navbar-expand .navbar-toggler {
+        display: block;
+    }
+    .navbar-expand .navbar-toggler .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .mainMenuBlock {
+        margin-right: 0;
+        position: initial;
+    }
+    .navbar-expand {
+        position: initial;
+    }
+    .navbar-expand .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        flex-wrap: wrap;
+        left: 0;
+        justify-content: flex-end;
+        top: 100%;
+        right: 0;
+        padding: 20px 0;
+        background: rgb(0 0 0 / 85%);
+        border: 1px solid rgb(255 255 255 / 25%);
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+    }
+    .navbar-expand .navbar-nav {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+    .mainMenuBlock .dropdown-toggle::after {
+        top: 18px;
+        position: absolute;
+        margin-left: auto;
+        right: 10px;
+    }
+    .mainMenuBlock a {
+        font-size: 1.2rem;
+        padding: 10px 15px !important;
+    }
+    .mainMenuBlock .dropdown-menu a{
+        margin: 0;
+    }
+    .mainMenuBlock .navbar-expand .navbar-nav .dropdown-menu {
+        position: relative;
+        border: 0px solid #434344;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width:419px){
+    .brandLogo {
+        max-width: 120px;
+    }
+    .headerNavBlock {
+        width: calc(100% - 120px);
+    }
+    .headerActionBlock .btn i.ri-arrow-right-line {
+        display: none;
+    }
+    .headerActionBlock .btn {
+        font-size: 0;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+    }
+    .headerActionBlock {
+        position: fixed;
+        right: 0;
+        top: 85vh;
+        z-index: -1;
+    }
+    .headerActionBlock .btn i.ri-customer-service-2-fill {
+        display: block;
+        font-size: 1.6rem;
+    }
+}
+/*Media css end*/

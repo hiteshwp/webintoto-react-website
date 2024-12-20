@@ -24,7 +24,7 @@ const Services = () => {
       
       <div className="mainSection">
         {/* Top title section start */}
-        <section className="position-relative section-block inner-title-section">
+        <section className="position-relative section-block inner-title-section ourstory-inner-title-section">
           <div className="section-shape1"></div>
           <div className="container z-1 position-relative">
             <div className="row">
@@ -64,7 +64,7 @@ const Services = () => {
             </div>
 
             <div className="row home-about-wrap flex-md-row-reverse flex-lg-row-reverse">
-              <div className="col-12 col-md-6 col-lg-6">
+              <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-about-content-block">
                   <h6>What We Do, What You Get</h6>
                   <h3>Fresh Ideas. <br/> Thoughtful Design.</h3>
@@ -88,7 +88,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-6">
+              <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-about-img-block">
                   <img src={homeAbout} alt="About Us" className="home-about-img" />
                   <img src={symbol1} alt="Symbol" className="home-about-logo-symbol" />

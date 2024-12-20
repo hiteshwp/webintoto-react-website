@@ -1,5 +1,5 @@
 import React from 'react';
-import './../OurStory/OurStory.css';
+import './../UiUxDesign/UiUxDesign.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
 import Carousel from 'react-bootstrap/Carousel';
@@ -14,7 +14,6 @@ import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
 import mobileDevelopmentIcon from '../../assets/images/icons/mobile-development.png'
 import softwareDevelopmentIcon from '../../assets/images/icons/software-development.png'
 import blockChainIcon from '../../assets/images/icons/blockchain.png'
-import arVrIcon from '../../assets/images/icons/ar-vr.png'
 
 const Services = () => {
   return (
@@ -32,7 +31,7 @@ const Services = () => {
               <div className="col-12 col-md-12 col-lg-12">
                 <div className="title-block1 position-relative uiux-service-title">
                   <h6 className="title-label text-white">Design Service</h6>
-                  <h2 className="main-title text-white text-capitalize">UI/UX Design <span className="color-purple-lite">Services</span></h2>
+                  <h2 className="main-title text-white text-capitalize">UI/UX Design <span className="color-purple-lite">Service</span></h2>
                   <p className="title-description text-white ms-0 mb-4">Our in-house design studio targets delivering value-driven UI/UX designs that create engaging mobile and web apps. An innovative process, timely completion and superior user experience are our forte.</p>
                   <a href="#" className="btn btn-yellow">Schedule a Free Consultation!</a>
                   <img src={uiuxTitleImg} alt="UI/UX Design" className="title-icon uiux-title-icon" />
@@ -80,7 +79,7 @@ const Services = () => {
                       <h6>Expert UI UX Consulting Services</h6>
                     </li>
                   </ul>
-                  <a className="btn btn-primary">Get In Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get In Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
               <div className="col-12 col-md-6 col-lg-6">
@@ -106,44 +105,40 @@ const Services = () => {
             </div>
 
             <div className="row justify-content-center">
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3 mt-5">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-mac-line"></i>
                   </span>
-                  <h5>Web <br /> Design</h5>
+                  <h5>Web <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-smartphone-line"></i>
                   </span>
-                  <h5>Mobile <br /> App Design</h5>
+                  <h5>Mobile App <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-4 col-lg-4">
-                <div className="service-info-icon-card">
-                  <span className="service-info-icon">
-                    <i className="ri-shape-line"></i>
-                  </span>
-                  <h5>Wirerames & <br /> Prototyping</h5>
-                </div>
-              </div>
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3 mt-5">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-compasses-2-line"></i>
                   </span>
-                  <h5>Logo <br /> Design</h5>
+                  <h5>Logo <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
-              <div className="col-12 col-md-4 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-3">
                 <div className="service-info-icon-card">
                   <span className="service-info-icon">
                     <i className="ri-pen-nib-line"></i>
                   </span>
-                  <h5>Graphic <br /> Design</h5>
+                  <h5>Graphic <br/> Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita tempore asperiores excepturi repellat doloremque consequatur iste molestias corrupti quidem.</p>
                 </div>
               </div>
             </div>
@@ -184,7 +179,7 @@ const Services = () => {
                 <div className="cta-card-block">
                   <h4>Let's create your dream project</h4>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut et eligendi eos iste nesciunt quidem veniam ex soluta nostrum veritatis velit quia, architecto atque adipisci! Unde ex labore ullam expedita.</p>
-                  <a className="btn btn-primary">Get in Touch <i class="ri-arrow-right-line ms-2"></i></a>
+                  <a className="btn btn-primary">Get in Touch <i className="ri-arrow-right-line ms-2"></i></a>
                 </div>
               </div>
             </div>
