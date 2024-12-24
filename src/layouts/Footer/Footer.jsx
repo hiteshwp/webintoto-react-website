@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './../Footer/Footer.css';
-import webintotoLogo from '../../assets/images/logo-white.png'
-import worldMap from '../../assets/images/world-map.svg'
 import FooterPlaceholder from '../Placeholder/FooterPlaceholder';
 import { Link } from 'react-router-dom';
 

@@ -7,35 +7,7 @@ import { Link } from 'react-router-dom';
 
 import heroBG1 from '../../assets/images/1-bg.png'
 import heroDownArrow from '../../assets/images/arrow-down-big.png'
-import clientLogo1 from '../../assets/images/client-logo/c-logo1.png'
-import clientLogo2 from '../../assets/images/client-logo/c-logo2.png'
-import clientLogo3 from '../../assets/images/client-logo/c-logo3.png'
-import clientLogo4 from '../../assets/images/client-logo/c-logo4.png'
-import clientLogo5 from '../../assets/images/client-logo/c-logo5.png'
-import clientLogo6 from '../../assets/images/client-logo/c-logo6.png'
-import clientLogo7 from '../../assets/images/client-logo/c-logo7.png'
-import homeAbout from '../../assets/images/about-img1.jpg'
 import symbol1 from '../../assets/images/symbol-white.svg'
-import uiuxIcon from '../../assets/images/icons/ux-design.png'
-import webProgrammingIcon from '../../assets/images/icons/web-programming.png'
-import mobileDevelopmentIcon from '../../assets/images/icons/mobile-development.png'
-import softwareDevelopmentIcon from '../../assets/images/icons/software-development.png'
-import blockChainIcon from '../../assets/images/icons/blockchain.png'
-import arVrIcon from '../../assets/images/icons/ar-vr.png'
-import iotIcon from '../../assets/images/icons/iot.png'
-import digitalMarketingIcon from '../../assets/images/icons/digital-marketing.png'
-import seoIcon from '../../assets/images/icons/seo.png'
-import html from '../../assets/images/tech-logo/html.png'
-import css from '../../assets/images/tech-logo/css.png'
-import wordpress from '../../assets/images/tech-logo/wordpress.png'
-import php from '../../assets/images/tech-logo/php.png'
-import laravel from '../../assets/images/tech-logo/laravel.png'
-import codeigniter from '../../assets/images/tech-logo/codeigniter.png'
-import angular from '../../assets/images/tech-logo/angular.png'
-import react from '../../assets/images/tech-logo/react-native.png'
-import flutter from '../../assets/images/tech-logo/flutter.png'
-import apple from '../../assets/images/tech-logo/apple.png'
-import android from '../../assets/images/tech-logo/android.png'
 import testimonialUser from '../../assets/images/team/team-img-1.jpg'
 
 import axios from 'axios';
@@ -273,7 +245,7 @@ const Home = () => {
       default:
         return null;
     }
-};
+  };
 
   useEffect(() => {
     handleApiCall();
@@ -285,10 +257,7 @@ const Home = () => {
 
   return (
     <>
-      {/* Header section start */}
-      <Header />
-      {/* Header section end */}
-        
+      <Header />        
       <div className="mainSection">
         {contentSection?.length > 0 ? (
           contentSection?.map((section, index) => (
@@ -298,12 +267,8 @@ const Home = () => {
           <p>No sections available</p>
         )}
       </div>
-
-      {/* Footer section start */}
       <Footer />
-      {/* Footer section end */}
     </>
   )
 }
-
 export default Home

@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './../ContactUs/ContactUs.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
-import { Link } from 'react-router-dom';
-
-import ourWorkImg from '../../assets/images/our-work/ourwork-thumb-img1.webp'
-import ourProcess from '../../assets/images/process-steps-img.svg';
+import axios from 'axios';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const Services = () => {
+
+  const [loading, setLoading] = useState(false);
+  const [contentSection, setContentSection] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleApiCall = async () => {
+    setLoading(true);
+    setContentSection(true);
+    setError(null);
+
+    try {
+      const data = {
+        page_name: 'contact-us',
+      };
+      const result = await axios.post(`${API_BASE_URL}/contact-us`, data);
+      setContentSection(result?.data?.sections?.page_content_section || []);
+    } catch (err) {
+      setError(err.message || 'Something went wrong');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    handleApiCall();
+  }, []);
+
   return (
     <>
       {/* Header section start */}
@@ -22,12 +47,12 @@ const Services = () => {
             <div className="row">
               <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div className="sec-title-wrapper">
-                  <h2 className="sec-title-2">Let’s get in touch</h2>
+                  <h2 className="sec-title-2">{contentSection?.section_title}</h2>
                 </div>
               </div>
               <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div className="contact__text">
-                  <p>Great! We're excited to hear from you and let's start something special togerter. call us for any inquery.</p>
+                  <p>{contentSection?.section_content}</p>
                 </div>
               </div>
             </div>
@@ -35,11 +60,11 @@ const Services = () => {
             <div className="row contact__btm">
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                 <div className="contact__info">
-                  <h3 className="sub-title-anim-top animation__word_come">Don't be afraid man ! <br />say hello</h3>
+                  <h3 className="sub-title-anim-top animation__word_come" dangerouslySetInnerHTML={{ __html: contentSection?.address_section_content_title }}></h3>
                   <ul>
-                    <li><a href="tel:+911234567890">+91 12345 67890</a></li>
-                    <li><a href="mailto:hello@webintoto.com">hello@webintoto.com</a></li>
-                    <li><span>230 Norman Street Ahmedabad, <br /> Gujarat, India - 380001</span></li>
+                    <li><a href={`tel:${contentSection?.address_section_contact_number_without_space}`}>{contentSection?.address_section_contact_number}</a></li>
+                    <li><a href={`mailto:${contentSection?.address_section_email_address}`}>{contentSection?.address_section_email_address}</a></li>
+                    <li><span dangerouslySetInnerHTML={{ __html: contentSection?.address_section_address_detail }}></span></li>
                   </ul>
                 </div>
               </div>
