@@ -1,263 +1,216 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './../OurStory/OurStory.css';
 import Header from '../../layouts/Header/Header';
 import Footer from '../../layouts/Footer/Footer';
-
-import topAboutImg from '../../assets/images/about-img1.jpg'
-import homeAbout from '../../assets/images/about-img1.jpg'
 import symbol1 from '../../assets/images/symbol-white.svg'
-import clientLogo1 from '../../assets/images/client-logo/c-logo1.png'
-import clientLogo2 from '../../assets/images/client-logo/c-logo2.png'
-import clientLogo3 from '../../assets/images/client-logo/c-logo3.png'
-import clientLogo4 from '../../assets/images/client-logo/c-logo4.png'
-import clientLogo5 from '../../assets/images/client-logo/c-logo5.png'
-import clientLogo6 from '../../assets/images/client-logo/c-logo6.png'
-import clientLogo7 from '../../assets/images/client-logo/c-logo7.png'
-import teamImg1 from '../../assets/images/team/team-img-1.jpg'
+import axios from 'axios';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const Services = () => {
+
+  const [loading, setLoading] = useState(false);
+  const [contentSection, setContentSection] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleApiCall = async () => {
+    setLoading(true);
+    setContentSection(true);
+    setError(null);
+
+    try {
+      const data = {
+        page_name: 'our-story',
+      };
+      const result = await axios.post(`${API_BASE_URL}/our-story`, data);
+      setContentSection(result?.data?.sections || []);
+    } catch (err) {
+      setError(err.message || 'Something went wrong');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const renderSection = (section) => {
+    const sectiondata = section.section_data;
+    switch (section.section_title) 
+    {
+      case 'top_banner_section':
+        return <section className="position-relative section-block inner-title-section ourstory-inner-title-section">
+                <div className="section-shape1"></div>
+                <div className="container z-1 position-relative">
+                  <div className="row">
+                    <div className="col-12 col-md-12 col-lg-12">
+                      <div className="title-block">
+                        <h6 className="title-label text-white">{sectiondata?.acf_flx_os_tbs_section_title}</h6>
+                        <h2 className="main-title text-white text-capitalize" dangerouslySetInnerHTML={{ __html: sectiondata?.acf_flx_os_tbs_section_content }}></h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>;
+      case 'about_us_section':
+        return <section className="position-relative section-block inner-about-section">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12 col-md-12 col-lg-12">
+                      <div className="inner-about-img-block">
+                        <img src={sectiondata?.acf_flx_os_aus_section_image?.image_url} alt={sectiondata?.acf_flx_os_aus_section_image?.image_alt} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row mt-5">
+                    <div className="col-12 col-md-6 col-lg-6">
+                      <div className="inner-about-info">
+                        <h2>{sectiondata?.acf_flx_os_aus_section_title}</h2>
+                        <h6>{sectiondata?.acf_flx_os_aus_section_sub_title}</h6>
+                      </div>
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-6">
+                      <div className="inner-about-info">
+                        <p>{sectiondata?.acf_flx_os_aus_section_content}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>;
+      case 'what_we_do_section':
+        return <section className="position-relative section-block inner-about-section">
+                  <div className="container">
+                    <div className="row home-about-wrap flex-md-row-reverse flex-lg-row-reverse">
+                      <div className="col-12 col-md-12 col-lg-6">
+                        <div className="home-about-content-block">
+                          <h6>{sectiondata?.acf_flx_os_wwds_section_title}</h6>
+                          <h3 dangerouslySetInnerHTML={{ __html: sectiondata?.acf_flx_os_wwds_section_sub_title }}></h3>
+                          <p>{sectiondata?.acf_flx_os_wwds_section_content}</p>
+                          <div className="list-icons">
+                            {sectiondata?.acf_flx_os_wwds_content_listing?.map((item) => (
+                              <div className="item-icon" key={item.uid}>
+                                <span className="icon-left"><i className="ri-tent-line"></i></span>
+                                <h4 className="text-heading-4">{item.acf_flx_os_wwds_listing_title}</h4>
+                                <p className="text-body-excerpt color-gray-600 mt-15">{item.acf_flx_os_wwds_listing_content}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-12 col-md-12 col-lg-6">
+                        <div className="home-about-img-block">
+                          <img src={sectiondata?.acf_flx_os_wwds_section_image?.image_url} alt={sectiondata?.acf_flx_os_wwds_section_image?.image_alt} className="home-about-img" />
+                          <img src={symbol1} alt="Symbol" className="home-about-logo-symbol" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>;
+      case 'status_section':
+        return  <section className="position-relative section-block inner-about-section">
+                  <div className="container">
+                    <div className="row mt-5">
+                      <div className="col-12 col-md-12 col-lg-12">
+                        <div className="counter-wrapper mt-3">
+                        {sectiondata?.acf_flx_os_ss_section_listing?.map((item) => (
+                            <div className="counter-item" key={item.uid}>
+                              <h2 className="counter-number">{item.acf_flx_os_ss_listing_detail}</h2>
+                              <p>{item.acf_flx_os_ss_listing_title}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>;
+      case 'client_logo_section':
+        return <section className="position-relative section-block inner-about-section">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-12 col-md-12 col-lg-12">
+                        <div className="client-logo-wrapper">
+                          {sectiondata?.acf_flx_os_cls_client_logo?.map((item) => (
+                            <div className="client-logo-item" key={item.uid}>
+                              <img src={item.image_url} alt={item.image_alt} />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>;
+      case 'our_team_section':
+        return <section className="position-relative section-block home-about-section">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12 col-md-12 col-lg-12">
+                      <div className="title-block">
+                        <h6 className="title-label">{sectiondata?.acf_flx_os_ots_section_title}</h6>
+                        <h2 className="main-title" dangerouslySetInnerHTML={{ __html: sectiondata?.acf_flx_os_ots_section_sub_title }}></h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    {sectiondata?.acf_flx_os_ots_section_listing?.map((item) => (
+                      <div className="col-12 col-md-3 col-lg-3" key={item.uid}>
+                        <div className="our-team-card">
+                          <div className="our-team-img">
+                            <img src={item.acf_flx_os_ots_listing_image.image_url} alt={item.acf_flx_os_ots_listing_image.image_alt} />
+                          </div>
+                          <div className="our-team-info">
+                            <span className="designation-text">{item.acf_flx_os_ots_listing_title}</span>
+                            <h4 className="team-name">{item.acf_flx_os_ots_listing_sub_title}</h4>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>;
+      case 'life_at_webintoto_section':
+        return <section className="position-relative section-block life-at-webintoto-section">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12 col-md-12 col-lg-12">
+                      <div className="title-block">
+                        <h6 className="title-label">{sectiondata?.acf_flx_os_laws_section_title}</h6>
+                        <h2 className="main-title" dangerouslySetInnerHTML={{ __html: sectiondata?.acf_flx_os_laws_section_sub_title }}></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-12 col-md-12 col-lg-12">
+                      <div className="image-gallery">
+                        {sectiondata?.acf_flx_os_laws_section_gallery?.map((item) => (
+                          <div className="image-gallary-item" key={item.uid}>
+                            <img src={item.image_url} alt={item.image_alt} />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>;
+      default:
+        return null;
+    }
+  };
+
+  useEffect(() => {
+    handleApiCall();
+  }, []);
+
   return (
     <>
-      {/* Header section start */}
       <Header />
-      {/* Header section end */}
-      
       <div className="mainSection">
-        {/* Top title section start */}
-        <section className="position-relative section-block inner-title-section ourstory-inner-title-section">
-          <div className="section-shape1"></div>
-          <div className="container z-1 position-relative">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="title-block">
-                  <h6 className="title-label text-white">Our Story</h6>
-                  <h2 className="main-title text-white text-capitalize">We’re making work <span className="color-purple-lite">meaningful</span> <br /> for everyone, everywhere.</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Top title section end */}
-
-        {/* Inner about section start */}
-        <section className="position-relative section-block inner-about-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="inner-about-img-block">
-                  <img src={topAboutImg} alt="About Us" />
-                </div>
-              </div>
-            </div>
-            <div className="row mt-5">
-              <div className="col-12 col-md-6 col-lg-6">
-                <div className="inner-about-info">
-                  <h2>We Are Increasing Business Success With Technology</h2>
-                  <h6>Over 7 years working in IT services developing software applications and mobile apps for clients all over the world.</h6>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-6">
-                <div className="inner-about-info">
-                  <p>As the name suggests we provide all services that help to enhance the performance of your brand online. With zero hassles, you will get the all the solutions at fair prices. Your search ends here for the services like Web Designing, Software Development, Mobile App Development, Digital Marketing, Search Engine Optimization (SEO), Social Media Marketing, Ecommerce Solutions, etc. We offer solutions to fit your requirements with our customized packages to meet your requirements for the online presence of your brands. Our professional services help your brand to grow upward in the respective industries. Brand awareness and brand recognition will wholly depend upon the website and optimizing it. WebInToTo will serve this industry for more than ten years. With time, we also grew and developed as the best service provider in the industry of website development and design.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="row home-about-wrap flex-md-row-reverse flex-lg-row-reverse">
-              <div className="col-12 col-md-12 col-lg-6">
-                <div className="home-about-content-block">
-                  <h6>What We Do, What You Get</h6>
-                  <h3>Fresh Ideas. <br/> Thoughtful Design.</h3>
-                  <p>Welcome to WebInToTo! As the name suggests we provide all services that help to enhance the performance of your brand online.</p>
-                  <div className="list-icons">
-                    <div className="item-icon">
-                      <span className="icon-left"><i className="ri-tent-line"></i></span>
-                      <h4 className="text-heading-4">Our Experience</h4>
-                      <p className="text-body-excerpt color-gray-600 mt-15">We are catering to this industry for more than 7 years successfully. We enlarged our services to many companies with IT-related requirements.</p>
-                    </div>
-                    <div className="item-icon">
-                      <span className="icon-left"><i className="ri-tent-line"></i></span>
-                      <h4 className="text-heading-4">Dedicated and Proficient Team</h4>
-                      <p className="text-body-excerpt color-gray-600 mt-15">Our experienced and passionate team members are having years of experience in the respective industry. Their expertise and knowledge increase our strength to serve our clients.</p>
-                    </div>
-                    <div className="item-icon">
-                      <span className="icon-left"><i className="ri-tent-line"></i></span>
-                      <h4 className="text-heading-4">Versatility to serve you better</h4>
-                      <p className="text-body-excerpt color-gray-600 mt-15">We have the expertise and experience that help brands to uplift the graph of success upwards and take their business to an elevated level in the competitive market.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-12 col-lg-6">
-                <div className="home-about-img-block">
-                  <img src={homeAbout} alt="About Us" className="home-about-img" />
-                  <img src={symbol1} alt="Symbol" className="home-about-logo-symbol" />
-                </div>
-              </div>
-            </div>
-
-            <div className="row mt-5">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="counter-wrapper mt-3">
-                  <div className="counter-item">
-                    <h2 className="counter-number">15</h2>
-                    <p>Years experiences</p>
-                  </div>
-                  <div className="counter-item">
-                    <h2 className="counter-number">189+</h2>
-                    <p>Project Completed</p>
-                  </div>
-                  <div className="counter-item">
-                    <h2 className="counter-number">99%</h2>
-                    <p>Successful projects</p>
-                  </div>
-                  <div className="counter-item">
-                    <h2 className="counter-number">150+</h2>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="client-logo-wrapper">
-                    <div className="client-logo-item">
-                      <img src={clientLogo1} alt="Client Logo" />
-                    </div>
-                    <div className="client-logo-item">
-                      <img src={clientLogo2} alt="Client Logo" />
-                    </div>
-                    <div className="client-logo-item">
-                      <img src={clientLogo3} alt="Client Logo" />
-                    </div>
-                    <div className="client-logo-item">
-                      <img src={clientLogo4} alt="Client Logo" />
-                    </div>
-                    <div className="client-logo-item">
-                      <img src={clientLogo5} alt="Client Logo" />
-                    </div>
-                    <div className="client-logo-item">
-                      <img src={clientLogo6} alt="Client Logo" />
-                    </div>
-                    <div className="client-logo-item">
-                      <img src={clientLogo7} alt="Client Logo" />
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </section>
-        {/* Inner about section end */}
-
-        {/* Team section start */}
-        <section className="position-relative section-block home-about-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="title-block">
-                  <h6 className="title-label">Team</h6>
-                  <h2 className="main-title">Meet <span className="color-purple-lite">Our Team</span></h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col-12 col-md-3 col-lg-3">
-                <div className="our-team-card">
-                  <div className="our-team-img">
-                    <img src={teamImg1} alt="Team" />
-                  </div>
-                  <div className="our-team-info">
-                    <span className="designation-text">Markting Expert</span>
-                    <h4 className="team-name">Jannat Ferdaus</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-3 col-lg-3">
-                <div className="our-team-card">
-                  <div className="our-team-img">
-                    <img src={teamImg1} alt="Team" />
-                  </div>
-                  <div className="our-team-info">
-                    <span className="designation-text">Markting Expert</span>
-                    <h4 className="team-name">Jannat Ferdaus</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-3 col-lg-3">
-                <div className="our-team-card">
-                  <div className="our-team-img">
-                    <img src={teamImg1} alt="Team" />
-                  </div>
-                  <div className="our-team-info">
-                    <span className="designation-text">Markting Expert</span>
-                    <h4 className="team-name">Jannat Ferdaus</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-3 col-lg-3">
-                <div className="our-team-card">
-                  <div className="our-team-img">
-                    <img src={teamImg1} alt="Team" />
-                  </div>
-                  <div className="our-team-info">
-                    <span className="designation-text">Markting Expert</span>
-                    <h4 className="team-name">Jannat Ferdaus</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Team section end */}
-
-        {/* Life at webintoto section start */}
-        <section className="position-relative section-block life-at-webintoto-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="title-block">
-                  <h6 className="title-label">Gallery Take A Peek</h6>
-                  <h2 className="main-title">Life at <span className="color-purple-lite">Webintoto</span></h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 col-md-12 col-lg-12">
-                <div className="image-gallery">
-                  <div className="image-gallary-item">
-                    <img src={topAboutImg} alt="" />
-                  </div>
-                  <div className="image-gallary-item">
-                    <img src={topAboutImg} alt="" />
-                  </div>
-                  <div className="image-gallary-item">
-                    <img src={topAboutImg} alt="" />
-                  </div>
-                  <div className="image-gallary-item">
-                    <img src={topAboutImg} alt="" />
-                  </div>
-                  <div className="image-gallary-item">
-                    <img src={topAboutImg} alt="" />
-                  </div>
-                  <div className="image-gallary-item">
-                    <img src={topAboutImg} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Life at webintoto section end */}
-
+        {contentSection?.length > 0 ? (
+          contentSection?.map((section, index) => (
+            <div key={index}>{renderSection(section)}</div>
+          ))
+        ) : (
+          <p>No sections available</p>
+        )}
       </div>
-
-      {/* Footer section start */}
       <Footer/>
-      {/* Footer section end */}
     </>
   )
 }
-
 export default Services

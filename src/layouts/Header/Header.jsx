@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './../Header/Header.css';
-import webintotoLogo from '../../assets/images/logo-white.png'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
